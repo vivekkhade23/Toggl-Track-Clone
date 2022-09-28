@@ -1,0 +1,158 @@
+.heading_div {
+    background-color: #2c1338;
+    color: #fff3ed;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .heading_div > h1 {
+    font-size: 57.372px;
+    font-family: "GT Haptik Medium", sans-serif;
+    line-height: 63.1092px;
+    margin-bottom: 30px;
+  }
+  .heading_div > p {
+    font-size: 17.075px;
+    font-family: Inter, sans-serif;
+    line-height: 25.6125px;
+    margin-bottom: 20px;
+  }
+  .signup_btn {
+    padding: 15px 28px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.4px;
+    background-color: #e57cd8;
+    color: #ffffff;
+    margin: 20px;
+  }
+  .signup_btn :hover {
+    background-color: #564260 !important;
+  }
+  .btns_div {
+    display: flex;
+    justify-content: center;
+  }
+  .signup_btn + button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    background-color: transparent;
+    border: none;
+    color: #fce5d8;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .signup_btn + button > span {
+    margin-top: 4px;
+    margin-left: 5px;
+  }
+  .signup_btn + button:hover {
+    color: #e57cd8;
+  }
+  .timesheet_div {
+    padding-top: 30px;
+    background-color: #fff3ed;
+    text-align: center;
+  }
+  .timesheet_flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .timesheet_flex > p {
+    color: #817187;
+    font-family: "GT Haptik Medium", sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .timesheet_div > h1 {
+    color: #412a4c;
+    font-size: 45px;
+    line-height: 57px;
+    font-family: "GT Haptik Medium", sans-serif;
+    margin-top: 80px;
+  }
+  .timesheet_div > h1 > span {
+    color: #e57cd8;
+    font-family: MV Boli;
+  }
+  .timesheet_flex_2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+  }
+  .timesheet_flex_2 > div > div {
+    width: 450px;
+    height: 170px;
+    padding: 20px 50px;
+    text-align: start;
+    font-family: Inter, sans-serif;
+    margin-bottom: 100px;
+    margin-top: 40px;
+  }
+  .timesheet_flex_2 > div > div > h2 {
+    font-family: "GT Haptik Medium", sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    color: #2c1338;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .timesheet_flex_2 > div > div > p {
+    font-size: 17px;
+    line-height: 25px;
+    color: #2c1338;
+  }
+  .timesheet_flex_2 > div > div > img {
+    margin-bottom: 100px;
+    margin-top: 150px;
+  }
+  .design_cards_div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    padding-bottom: 150px;
+  }
+  .design_cards_div > div {
+    width: 20rem;
+    height: 315px;
+    padding: 30px;
+    text-align: center;
+  }
+  .design_cards_div > div > h2 {
+    font-family: "GT Haptik Medium", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #2c1338;
+    margin-bottom: 15px;
+  }
+  .design_cards_div > div > p {
+    font-family: Inter, sans-serif;
+    font-size: 17px;
+    line-height: 22px;
+    color: #564260;
+    /* margin-top: 1rem; */
+  }
+  .design_cards_div > div:nth-child(2) > h2 {
+    margin-top: 2rem;
+  }
+  .design_cards_div > div > img {
+    margin-left: 50px;
+    margin-bottom: 25px;
+  }
+  .design_cards_div > div:nth-child(1) > img {
+    width: 145px;
+  }
+  .design_cards_div > div:nth-child(2) > img {
+    width: 200px;
+  }
+  .design_cards_div > div:nth-child(3) > img {
+    width: 190px;
+  }
