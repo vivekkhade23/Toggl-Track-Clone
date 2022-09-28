@@ -1,0 +1,85 @@
+.NavbarProduct_nain_mainContainer_mydiv{
+    display:flex;
+    background-color: rgb(252, 229, 216);
+    overflow: auto;
+    width: 100%;
+    top: var(--top--offset);
+    position: absolute;
+    height: auto;
+    --top--offset: 90px;
+    left: 0px;
+    
+}
+.NavbarProduct_child_mainContainer_mydiv{
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+}
+
+.NavbarProduct_child_P_child_mainContainer_mydiv > P{
+    color: rgb(129, 113, 135);
+    font-family: "GT Haptik Medium", sans-serif;
+    font-size: clamp(0.95rem, 1vw, 1rem);
+    text-transform: uppercase;
+    letter-spacing: 0.25px;
+    margin-left: 45px;
+}
+.NavbarProduct_child_child_mainContainer_mydiv{
+    display:flex;
+    margin-top: 5px;
+}
+
+.NavbarProduct_child_child_mainContainer_mydiv > div >img{
+    height: 60px;
+    width: 60px;
+    margin-right: 15px;
+    margin-left: 40px;
+    margin-top: 5px;
+   
+
+}
+.NavbarProduct_child_child_mainContainer_mydiv > div > h5{
+    margin-top: 1px;
+    color: #412A4C;
+    line-height: 1.5;
+    font-size: clamp(1.0125rem, 1.25vw, 1.125rem);
+    font-family: "GT Haptik Medium", sans-serif;
+    margin-bottom: 2px;
+
+}
+.NavbarProduct_child_child_mainContainer_mydiv > div > p{
+    color: rgb(129, 113, 135);
+    font-size: 0.875rem;
+    line-height: 1.35;
+}
+.NavbarProduct_child_main_Container_mydiv{
+    width: 30%;
+    margin-right: 200px;
+}
+
+.NavbarProduct_child_child_surveillance_mydiv > button{
+    font-family: "GT Haptik Medium", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    column-gap: 20px;
+    margin-top: 20px;
+    padding: 20px !important;
+    width: 100% !important;
+    max-width: 90% !important;
+    margin: 0 auto;
+    border: none !important;
+    color: rgb(44, 19, 56);
+    background-color:rgb(255, 243, 237)
+}
+
+.NavbarProduct_child_child_surveillance_mydiv > button:hover{
+     background-size: 100% 200%;
+    transition: background-position 5s ease-in-out 0s;
+    background-position: 0px -100%;
+    background-image: linear-gradient(rgb(247, 216, 243) 50%, rgb(255, 243, 237) 50%);
+
+}
+.NavbarProduct_child_child_surveillance_mydiv > button > svg{
+    transform: scaleX(-1);
+    width: 30px;
+    margin-left: auto;
+}
