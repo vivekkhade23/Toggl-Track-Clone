@@ -1,0 +1,343 @@
+#phead{
+    color: #fff3ed;
+   padding-top: 90px;
+  padding-left: 80px;
+   text-align: left;
+    max-width: 850px;
+   font-family: GT Haptik Medium, sans-serif;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 63px;
+   font-size: 57px;
+   display: block;
+  
+   margin-block-start: 0.67em;
+   margin-block-end: 0.67em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   font-weight: bold;
+
+}
+#pb{
+    color: #e57cd8;
+    font-family:'GT Haptik Medium Rotalic',sans-serif;
+}
+.pbox{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+#ptext{
+    color: #fce5d8;
+   font-size: 27px;
+    font-weight: 400;
+  
+    padding-left: 80px;
+    margin-bottom: 40px;
+    max-width: 90%;
+    line-height: 1.5;
+    text-align: left;
+    font-family: Inter, sans-serif;
+}
+.pinput{
+    background: transparent;
+    border: 3px solid #ABA0AF;
+    max-width: 60%;
+    padding-left: 30px;
+  
+
+    caret-color: #2C1338;
+    font-size: 22px;
+    line-height: 1.35;
+    color: #FCE5D8;
+ 
+    
+}
+#more{
+    text-align: left; 
+    padding-left: 80px;
+    margin-bottom: 30px;
+}
+#pbtn{
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-size: 1rem;
+    padding: 17px 38px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 26px;
+    border: 0;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 52px;
+    -webkit-transition: background-color 150ms linear,color 150ms linear;
+    transition: background-color 150ms linear,color 150ms linear;
+    background-color: #E57CD8;
+    color: #FFF; 
+}
+#fl{
+    padding-left: 80px; 
+}
+.tag{
+    color: #FCE5D8;
+    font-size: 12px;
+    line-height: 1.4;
+} 
+.tracking{
+    color:#412A4C;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+    font-size: clamp(3rem * 0.6, 3vw, 3rem);
+    margin: 30px auto 45px;
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+}
+.pa{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 30px 0;
+    overflow-x: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 12px;
+    column-gap: 12px;
+    width: calc(100% + 30px);
+    padding: 0 30px 5px 0;
+}
+.cpa{
+    display: inline-block;
+    background-color: #412A4C;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-radius: 100px;
+   
+    color: #FFDE91;
+    font-family: 'GT Haptik Medium Rotalic',sans-serif;
+    padding: 13px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+}
+.css-1sgylmh-H3{
+    color: #FFF3ED;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    padding-left: 23px;
+    margin-bottom: 30px;
+    text-align: left;
+  
+    line-height: 1.3;
+}
+.paid{
+    padding: 60px 30px 60px;
+    background: #412A4C;
+    border-radius: 12px;
+    box-shadow: 0 1px 20px rgb(0 0 0 / 10%);
+    z-index: 1;
+    font-weight: 400;
+  width:83%;
+    height:auto;
+    margin: auto;
+}
+ul {
+
+    list-style-type: disc;
+}
+.list{
+    list-style: none;
+text-align: left;
+    color: #FFF3ED;
+    padding-left: 23px;
+    font-size: 17px;
+    line-height: 26px;
+    width: 70%;
+    margin-bottom: 15px;
+   
+    display: list-item;
+    
+}
+#learn{
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-size: 1rem;
+    padding: 14px 34px;
+    margin-left: 20px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 26px;
+    border: 0;
+    cursor: pointer;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 52px;
+    -webkit-transition: background-color 150ms linear,color 150ms linear;
+    transition: background-color 150ms linear,color 150ms linear;
+    background-color: #E57CD8;
+    color: #FFF;
+}
+#pbox{
+    padding: 45px 30px;
+    background: #2C1338; 
+    height:auto;
+    margin: auto;
+    
+    width: 100%;
+}
+#hum{
+    color: #FFF3ED;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+    font-size: clamp(3rem * 0.6, 3vw, 3rem);
+    margin: 30px auto 45px;
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+
+}
+#sher{
+background-color: #FCE5D8;
+width: 90%;
+padding-bottom: 40px;
+height: auto;
+border-radius: 12px;
+}
+#sher1{
+    background-color: #f7d8f3;
+    width: 90%;
+height: auto;
+padding-bottom: 40px;
+border-radius: 12px;
+}
+#sher3{
+    background-color:  #fce5d8  ;
+    width: 90%;
+    height: auto;
+    padding-bottom: 40px;
+    border-radius: 12px;
+}
+#sher4{
+    background-color:#fff2d3;
+    width: 90%;
+    padding-bottom: 40px;
+    height: auto;
+    border-radius: 12px;
+}
+.us{
+    color: #412A4C;
+    font-family: GT Haptik Medium,sans-serif;
+    font-weight: 540;
+    font-size: clamp(1.5rem * 0.8, 2vw, 1.5rem);
+    line-height: 1.35;
+    padding: 30px 20px;
+}
+.join{
+    color: #FFF3ED;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    font-size: clamp(2rem * 0.8, 2.5vw, 2rem);
+}
+.plans{
+    color: #C0B8C3;
+    line-height: 1.5;
+    margin: 0 auto 15px;
+    max-width: 650px;
+    font-size: 17px;
+    margin-top: 30px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+.css-j3on6x-Button-Primary{
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-size: 1rem;
+    padding: 14px 35px;
+    margin: auto;
+    
+    align-items: center;
+    border-radius: 26px;
+    border: 0;
+    cursor: pointer;
+   
+    display: flex;
+    height: 52px;
+    max-width: 200px;
+  
+    background-color: #E57CD8;
+    color: #FFF;
+}
+#back{
+   
+    transform: none;
+    width: 45%;
+    transition: none;
+    
+}
+.only{
+    color: #412A4C;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 30px;
+    font-size:32px;
+}
+#from{
+    color: #6B5A74;
+   font-family: Inter, sans-serif;
+   max-width: 60%;
+    margin-left: 28px;
+    font-size: 18px;
+}
+#explore{
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-size: 1rem;
+    padding: 14px 35px;
+  text-align: left;
+    margin-left: 30px;
+    border: 0;
+    font-weight: 600;
+    cursor: pointer;
+  
+   
+    height: 52px;
+  
+    color: #412A4C;
+    padding: 0;
+    height: auto;
+    line-height: 1.5;
+}
