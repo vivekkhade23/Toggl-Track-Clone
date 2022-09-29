@@ -1,0 +1,109 @@
+.signup1{
+    background-color: #412a4c;
+    color: white;
+}
+
+.signup2{
+    text-align: left;
+    margin-left: 120px;
+    padding-top: 140px;
+}
+
+.logo{
+    margin-top: -100px;
+    margin-left: -90px;
+    width: 16%;
+    margin-bottom: 45px;
+    cursor: pointer;
+}
+
+.button{
+  background-color: white;
+  color: black;
+  padding: 11px 34px; 
+  border-radius: 30px;
+  
+}
+.button:hover{
+    background-color: #ffdde2;
+    transition-duration: 0.5s;
+}
+
+.signup3{
+    display: flex;
+    margin-top: 80px;
+    gap:20px;
+    height: 680px;
+}
+
+.signup4{
+    padding: 35px;
+    width: 600px;
+    height: 600px;
+    padding-top: 20px;
+    margin-left: 120px;
+    padding-left: 50px;
+    background-color: #2c1338;
+}
+
+.hr{
+    width: 255px;
+    margin: -5px;
+    gap: 15px;
+}
+.or{
+    margin-top: -18px;
+    font-size: large;
+}
+
+.label{
+    text-align: left;
+    margin-left: 10px;
+    color: rgba(245, 245, 245, 0.938);
+}
+
+.label2{
+    margin-top: 15px;
+    text-align: left;
+    margin-left: 10px;
+    font-size:14px;
+}
+
+.inputbox{
+    background-color: #2c1338;
+    border: 1px solid white;
+    width:500px;
+    height: 40px;
+    padding: 22px;
+    border: 2px solid #aba0af;
+}
+
+.inputbox:focus{
+    background-color:#ffdde2;
+    color: black;
+}
+
+.icon{
+   position: absolute;
+   margin-top: -39px;
+   color: #7e6e85;
+   margin-left: 450px;
+   cursor: pointer;
+}
+
+.submit{
+    width: 500px;
+    background-color: #e57cd8;
+    height: 50px;
+    border-radius: 28px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+.submit:hover{
+    background-color: #5d4662;
+}
+
+:hover.legalterms{
+ color: white;
+ cursor: pointer;
+}
