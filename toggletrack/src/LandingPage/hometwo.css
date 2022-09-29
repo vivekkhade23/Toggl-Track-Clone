@@ -1,0 +1,374 @@
+.css-4fjy7e-H2-H2CenterTitle{
+    color: #412A4C;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 600;
+    line-height: 1.25;
+    font-size: clamp(3rem * 0.6, 3vw, 3rem);
+    margin: 30px auto 45px;
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+}
+.css-1c0gnig-Rotalic{
+    color: #412A4C;
+    font-family:GT Haptik Medium Rotalic, sans-serif;;
+    font-weight: 600;
+    line-height: 1.25;
+    font-size: clamp(3rem * 0.6, 3vw, 3rem);
+    margin: 30px auto 45px;
+    max-width: 800px;
+    text-align: center;
+    z-index: 1;
+}
+.incr{
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.5rem * 0.8, 2vw, 1.5rem);
+    line-height: 1.35;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #E57CD8;
+    line-height: 1.2!important;
+}
+.sweat{
+    color: #412A4C;
+    line-height: 1.5;
+    max-width: 300px;
+    font-weight: 600;
+    text-align: left;
+    font-size: clamp( 1.125rem * 0.9, 1.25vw, 1.125rem );
+}
+.read{
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-size: 1rem;
+    padding: 14px 35px;
+  
+    font-weight: bold;
+ text-align: left;
+    color: #564260;
+    padding: 0;
+    height: auto;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+.css-d1d45o-H3Small{
+    color: #412A4C;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    font-size: clamp( 2rem * 0.75, 2.5vw, 2rem * 0.88 );
+}
+.css-1bl7hqx-P2{
+    color: #6B5A74;
+    line-height: 1.5;
+    font-size: clamp( 1.125rem * 0.9, 1.25vw, 1.125rem );
+}
+p, h1, h2, h3, h4, h5 {
+    margin: 0;
+    color: #FCE5D8;
+}
+.Button-Primary{
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-size: 1rem;
+    padding: 14px 35px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 26px;
+    border: 0;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 52px;
+    -webkit-transition: background-color 150ms linear,color 150ms linear;
+    transition: background-color 150ms linear,color 150ms linear;
+    background-color: #E57CD8;
+    color: #FFF;
+}
+.css-9zrape-P3{
+    color: #412A4C;
+    line-height: 1.6;
+    font-size: clamp( 1rem * 0.95, 1vw, 1rem );
+}
+.css-bcngxs-Strong{
+    font-weight: bold;
+    line-height: 1.35;
+    font-size: clamp( 1rem * 0.95, 1vw, 1rem );
+    color: #412A4C;
+    font-weight: 700;
+}
+.css-wlgyu8-H2{
+    color: #412A4C;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-left: 69px;
+    text-align: left;
+   
+    font-size: clamp(3rem * 0.6, 3vw, 3rem);
+}
+.css-19nzmxl-Tabs{
+    margin: 21px 0;
+    overflow-x: auto;
+    margin-left: 69px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 12px;
+    column-gap: 12px;
+    width: calc(100% + 30px);
+    padding: 0 30px 5px 0;
+}
+.css-9pbf95-Tab{
+    display: inline-block;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-size: 1rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 100px;
+    color: #412A4C;
+    background: #FFDE91;
+    font-family: 'GT Haptik Medium Rotalic',sans-serif;
+    padding: 13px 20px;
+    margin: 5px 0;
+   
+    cursor: pointer;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+}
+.css-9pbf95-Tab:hover{
+    color:  #FFDE91;
+    background: #412A4C;
+}
+#need1{
+    padding-right: 40px;
+    display: block;
+}
+.need{
+    color: #412A4C;
+    margin-left: 64px;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 600;
+    line-height: 42px;
+    font-size:32px;
+
+}
+.Button-Secondary{
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-size: 1rem;
+    padding: 14px 35px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 26px;
+    border: 0;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 70px;
+    height: 52px;
+    -webkit-transition: background-color 150ms linear,color 150ms linear;
+    transition: background-color 150ms linear,color 150ms linear;
+    background-color: transparent;
+    border-color: #EA96E0;
+    color: #EA96E0;
+    padding: 0;
+    height: auto;
+    line-height: 1.5;
+}
+.toggl{
+    color: #412A4C;
+    line-height: 1.5;
+    margin-left: 13px;
+    font-size: clamp( 1.125rem * 0.9, 1.25vw, 1.125rem );
+}
+.writer{
+    line-height: 1.6;
+    font-size: clamp( 1rem * 0.95, 1vw, 1rem );
+    color: #6B5A74;
+    display: block;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.swit{
+font-size: 41px;
+font-family: "GT Haptik Medium", sans-serif;
+font-style: normal;
+font-weight: 500;
+width:60%;
+margin:auto;
+}
+#priya{
+    background-color: #2c1338;
+    height:auto;
+    padding: 2rem;
+    width:50%;
+    margin-left: 100px;
+    border-radius: 12px;
+    position: relative;
+    
+    bottom:-100px;
+
+}
+.swits{
+    font-size: 40px;
+    font-family: "GT Haptik Medium", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    width:60%;
+   text-align: left;
+    }
+    #all{
+        font-size: 15px;
+        text-align: left;
+        width: 95%;
+        font-family: Inter, sans-serif;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .svg{
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-size: 1rem;
+        background: white;
+        border: none;
+        color: #2C1338;
+        width: 286px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+      
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 52px;
+        cursor: pointer;
+        border-radius: 50px;
+    }
+    .svgh{
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-size: 1rem;
+        background: white;
+        border: none;
+        color: #2C1338;
+        width: 286px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height:20%;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 52px;
+        cursor: pointer;
+        border-radius: 50px;
+        appearance: auto;
+        writing-mode: horizontal-tb !important;
+     
+        text-rendering: auto;
+      
+        letter-spacing: normal;
+        word-spacing: normal;
+        line-height: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: center;
+        align-items: flex-start;
+        cursor: default;
+        box-sizing: border-box;
+        
+        margin: 0em;
+        padding: 1px 6px;
+        border-width: 2px;
+        border-style: outset;
+        border-color: buttonborder;
+        border-image: initial;
+    }
+    .sirf{
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-size: 1rem;
+        padding: 14px 35px;
+        border-radius: 26px;
+        cursor: pointer;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        height: 52px;
+       
+        background-color: #E57CD8;
+        color: #FFF;
+        gap: 9px;
+       margin: auto;
+        background-color: white;
+        color: #2C1338;
+    }
+    .up{
+        background: rgba(255, 255, 255, 0.714); 
+    }
+    #rajawat{
+        background:  #fce5d8 ;
+        height: auto;
+        width:45%;
+        text-align: center;
+        border-radius: 12px;
+        padding: 4rem 2rem 4rem 5rem;
+       margin-left: 600px;
+    }
+    .demo{
+        font-family: 'GT Haptik Medium',sans-serif;
+        width:43%;
+        margin: auto;
+        font-size: 1rem;
+        padding: 14px 35px;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-radius: 26px;
+        border: 0;
+        cursor: pointer;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 52px;
+        -webkit-transition: background-color 150ms linear,color 150ms linear;
+        transition: background-color 150ms linear,color 150ms linear;
+        background-color: #E57CD8;
+        color: #FFF;
+    }
+    .demo:hover{
+        background-color: #412A4C;
+    }
+    .prefer{
+        color: #412A4C;
+        font-family: 'GT Haptik Medium',sans-serif;
+        font-weight: 400;
+        line-height: 1.3;
+        margin-left: 37px;
+        font-size: clamp( 2rem * 0.75, 2.5vw, 2rem * 0.88 );
+    }
+    .teamss{
+        color: #6B5A74;
+        line-height: 1.5;
+        font-size: clamp( 1.125rem * 0.9, 1.25vw, 1.125rem );
+    }
