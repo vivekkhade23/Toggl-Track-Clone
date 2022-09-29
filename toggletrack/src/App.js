@@ -1,12 +1,11 @@
 import './App.css';
-import Signup from './components/LoginSignup/Signup';
-// import { ProjectBudgeting } from './components/project_budgeting/ProjectBudgeting';
+import Home from './LandingPage/Home';
 
 function App() {
   return (
-    <div className="App">   
-     {/* <ProjectBudgeting/> */}
-     <Signup/>
+    <div className="App">
+      <Home/>
+      
     </div>
   );
 }
