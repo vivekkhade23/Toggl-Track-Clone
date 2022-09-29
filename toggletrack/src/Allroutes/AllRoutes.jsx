@@ -5,11 +5,13 @@ import Signup from '../components/LoginSignup/Signup'
 import { Payroll } from '../components/Payroll/Payroll'
 import { ProjectBudgeting } from '../components/project_budgeting/ProjectBudgeting'
 import Home from '../LandingPage/Home'
+import {Route,Routes} from "react-router-dom"
+
 
 function AllRoutes() {
   return (
     <div>
-              <Routes>
+              <Routes >
         <Route path="/" element={<Home />} />
   
         {/* <Route path="/pricing" element={<Pricing />} /> */}
