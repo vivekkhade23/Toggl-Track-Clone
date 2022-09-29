@@ -1,0 +1,30 @@
+.topnavbar {
+    display: flex;
+    background-color: #e57cd8;
+    max-height: 40px;
+  }
+  .topnavbar > div:nth-child(1) {
+    flex-grow: 4;
+    background-color: #e57cd8;
+    max-height: 20px;
+  }
+  .topnavbar > div:nth-child(2) {
+    flex-grow: 0.5;
+    background-color: #e57cd8;
+    max-height: max-content;
+    padding: 2px 10px;
+  }
+  NavLink:hover {
+    border-bottom: 2px solid grey;
+  }
+  .topnavbar-second{
+    gap: 20px;
+    justify-content: flex-end;
+    margin-right: 10px;
+display: flex;
+  }
+  .topnavbar-second >div{
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  
