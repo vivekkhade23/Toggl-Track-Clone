@@ -1,6 +1,6 @@
 import style from "./projectbudgeting.module.css";
 import { BiCaretRight } from "react-icons/bi";
-// import { Faq2 } from "../Faq/Faq2";
+import { Faq } from "./Faq";
 
 export const ProjectBudgeting = () => {
   const designCards = [
@@ -97,18 +97,19 @@ export const ProjectBudgeting = () => {
         </div>
         <img
           src="https://user-images.githubusercontent.com/101570740/192701822-b4fd3e90-b0a3-4029-97f3-d14dae705cb5.png"
-          style={{ marginLeft: "0rem", marginTop: "1rem" }}
+          style={{ marginLeft: "9rem", marginTop: "1rem" }}
           alt=""
         />
         <h1>
         <span>Streamlined</span> project time tracking, so<br/>
         you can focus on the strategy
         </h1>
+        
         <div className={style.design_cards_div}>
           {designCards.map((e) => {
             return (
               <div key={e.h}>
-                <img src={e.img} width="100%" alt="" />
+                <img src={e.img}  alt="" />
                 <h2>{e.h}</h2>
                 <p>{e.p}</p>
               </div>
@@ -116,7 +117,20 @@ export const ProjectBudgeting = () => {
           })}
         </div>
       </div>
-      {/* <Faq2 /> */}
+      <div className={style.FAQsMainDiv}>
+      <div className={style.onboardDiv}>
+          <p>Onboarding a team?</p>
+          <p>Book a demo</p>
+        </div>
+
+        <h1 className={style.faq}>FAQs</h1>
+        
+        <div className={style.signupMainDiv}>
+          {/* signup */}
+        </div>
+        
+      </div>
+      <Faq />
     </div>
   );
 };
