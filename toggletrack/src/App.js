@@ -1,14 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Signup from './components/LoginSignup/Signup';
 // import { ProjectBudgeting } from './components/project_budgeting/ProjectBudgeting';
-// import { Payroll } from './components/Payroll/Payroll';
 
 function App() {
   return (
-    <div className="App">
-     
+    <div className="App">   
      {/* <ProjectBudgeting/> */}
-     {/* <Payroll/> */}
+     <Signup/>
     </div>
   );
 }

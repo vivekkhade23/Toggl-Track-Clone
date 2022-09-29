@@ -1,0 +1,393 @@
+body{
+    background-color: #FFF3ED;
+}
+.Employee_time_tracking_main_div{
+    /* border: 1px solid black; */
+    height: 490px;
+    width: 100%;
+    background-color: #2C1338;
+    font-family: 'Inter', sans-serif;
+
+}
+.Employee_time_tracking_main_div > div > h1{
+    max-width: 900px;
+    margin: auto auto 40px;
+    text-align: center;
+    color: #FFF3ED;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 550;
+    line-height: 1.1;
+    font-size: clamp( 5rem * 0.5, 4.2vw, 5rem * 0.9 );
+    padding-top:41px
+}
+
+.Employee_time_tracking_main_div > div > p{
+    margin: 22px auto;
+    max-width: 75ch;
+    line-height: 1.5;
+    font-size: clamp( 1.125rem * 0.9, 1.25vw, 1.125rem );
+    color: #FCE5D8;
+    text-align: center;
+    font-weight: 500;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+.Employee_time_tracking_main_div > div >span > p{
+    margin: 22px auto;
+    max-width: 45ch;
+    line-height: 1.5;
+    font-size: clamp( 1rem * 0.95, 1vw, 1rem );
+    color: #FCE5D8;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.Employee_time_tracking_main_button_div {
+ 
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 25px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+.Employee_time_tracking_main_button_div > div > button {
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-size: 1rem;
+    padding: 14px 35px;
+    align-items: center;
+    border-radius: 26px;
+    border: 0;
+    cursor: pointer;
+    height: 52px;
+    transition: background-color 150ms linear,color 150ms linear;
+    background-color: #E57CD8;
+    color: #FFF;
+}
+.Employee_time_tracking_main_button_div > div > button:hover {
+    background-color: #564260;
+    color: #FFF;
+}
+
+.Employee_time_tracking_main_demo_p_div{
+    display: flex;
+}
+.Employee_time_tracking_main_demo_p_div p{
+    font-size: clamp( 1rem * 0.95, 1vw, 1rem );
+    color: #FCE5D8;
+    text-align: center;
+}
+.Employee_time_tracking_main_demo_p_div p:hover{
+    color: #E57CD8;
+}
+.Employee_time_tracking_main_demo_p_div p ~ p{
+    content: '';
+    height: 0;
+    margin-left: 12px;
+    margin-top: 2px;
+    width: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid;
+    margin-top: 20px;
+}
+
+
+.trustedTypes_main_div{
+    display: flex;
+    width: 90%;
+    max-width: 60%;
+    margin: auto;  
+    margin-top: 40px;
+}
+
+.trustedTypes_main_div>div{
+    margin-right: 20px;
+    font-weight: bold;
+    color: grey;
+    margin-top: 15px;
+}
+.trustedTypes_main_div1{
+    width: 80%;
+    display: flex;
+    margin: auto;
+
+}
+
+
+
+.alternative_to_timesheets_main_div{
+    width: 80%;
+    max-width: 720px;
+    margin: auto;
+    margin-top:85px;
+}
+
+.alternative_to_timesheets_main_div >h2{
+    font-family: "GT Haptik Medium", sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: clamp(1.65rem, 3.5vw, 3rem);
+    text-align: center;
+    color:#412A4C;  
+}
+em{
+    font-family: "GT Haptik Medium Rotalic", sans-serif;
+    color: rgb(229, 124, 216);
+    font-weight: 550;
+    line-height: 1.2;
+    font-size: clamp(1.65rem, 3.5vw, 3rem);
+}
+
+.Less_timesheets_main_div{   
+    display: flex;
+    width: 75%;
+    gap: 50px;
+    margin: auto;
+    margin-top:60px;
+ 
+}
+.Less_timesheets_main_div > div >h3{
+    color: #2C1338;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: bold;
+    line-height: 1.25;
+    font-size: clamp(2rem * 0.8, 2.5vw, 2rem);
+    margin: 15px 0;
+    margin-left: 45px;
+    margin-top: 82px;
+}
+.Less_timesheets_main_div > div >p{
+    color: #2C1338;
+    line-height: 1.5;
+    font-size: clamp( 1.125rem * 0.9, 1.25vw, 1.125rem );
+    margin-left: 45px;
+    letter-spacing: 1px;
+}
+.Less_timesheets_img_main_div>img {
+    height:350px;
+    width: 580px;
+}
+
+
+
+.co_founder_of_Newlogic_main_div{
+    display: flex;
+    max-width: 900px;
+    height: 255px;
+    margin: auto;
+    background: #412A4C;
+    margin-top: 100px;
+}
+.co_founder_of_Newlogic_main_div > div > h4{
+    color: #FFF3ED;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 400;
+    line-height: 1.35;
+    position: relative;
+    font-size: clamp(1rem * 0.8, 1.4vw, 1.5rem);
+    margin: 50px  0 30px;
+    margin-left:55px;
+}
+.co_founder_of_Newlogic_main_div > div > p {
+    color: #FFDE91;
+    line-height: 1.5;
+    font-size: clamp( 1rem * 0.95, 1vw, 1rem );
+    margin-left:55px;
+}
+.co_founder_of_Newlogic_main_div > div > img{
+    position: relative;
+    margin-left: 14%;
+}
+
+
+
+.Designed_to_empower_main_div{
+    margin-top:100px;
+}
+
+.Designed_to_empower_main_div > h2{
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    color: #412A4C;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 550;
+    line-height: 1.2;
+    font-size: clamp(3rem * 0.55, 3.5vw, 3rem);
+    
+}
+
+.Designed_to_empower_logo_main_div{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    margin-top:80px;
+    justify-content:space-between;
+}
+.Designed_to_empower_logo_child_div{
+    width: 300px;  
+}
+
+.Designed_to_empower_logo_child_div > img{
+    margin-bottom: 10px;
+    height: 140px;
+    width: 50%;
+}
+
+.Designed_to_empower_logo_child_div > h5{
+    color: #2C1338;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 550;
+    font-size: clamp(1.25rem * .1, 1.8vw, 1.25rem * 1.1);
+    line-height: 1.5;
+    margin: 15px 0 10px;
+    line-height: 1.2;
+    
+}
+@media screen and (max-width: 900px){
+    .trustedTypes_main_div{
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 70%;
+        max-width: 50%;
+    }
+    .Less_timesheets_main_div{
+        display: block;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin: auto;
+        margin-top:80px
+    }
+    .Less_timesheets_img_main_div>img {
+        height:250px;
+        width: 350px;
+    }
+    .Designed_to_empower_logo_main_div{
+        max-width: 1100px;
+        margin: auto;
+        display: block;
+        text-align: center;
+        margin-top:80px;
+
+    }
+    .Designed_to_empower_logo_child_div{
+        width: 600px;  
+        height: 300px;
+        margin: auto;
+    }
+    .Designed_to_empower_logo_child_div > img{
+        margin-bottom: 10px;
+        height: 170px;
+        width: 40%;
+    }
+}
+@media screen and (max-width: 520px){
+    .trustedTypes_main_div{
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 70%;
+        max-width: 50%;
+    }
+    .Less_timesheets_main_div{
+        display: block;
+        width: 70%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin: auto;
+        margin-top:80px
+    }
+    .Less_timesheets_img_main_div> {
+        height:100px;
+        width: 200px;
+    }
+    
+}
+.Designed_to_empower_logo_child_div > p{
+    line-height: 1.2\3;
+    font-size: clamp( 1rem * 1, 1.1vw, 1rem );
+    color:gray;
+}
+
+.employee_page_faq_main_content_container{
+  margin-top:250px;
+  background: #412A4C;
+  padding: 15px!important;
+  
+}
+.employee_page_faq_main_content_container_signup2{
+    margin-top:-180px;
+}
+
+.employee_page_faq_main_content_onbording{
+    display: flex;
+    gap : 20px;
+    margin-top: 50px;
+    justify-content:center
+}
+.employee_page_faq_main_content_onbording{
+    line-height: 1.5;
+    font-size: clamp( 1.125rem * 0.9, 1.25vw, 1.125rem );
+    color: #FCE5D8;
+}
+.employee_page_faq_main_content_h2{
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 550;
+    line-height: 1.2;
+    font-size: clamp(3rem * 0.55, 3.5vw, 3rem);
+    color: #E57CD8;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.get_your_team_on_Track_main_div{
+    margin-top: 80px;
+    color: #412A4C;
+}
+.get_your_team_on_Track_main_div{
+    color: #412A4C;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: clamp(1rem * 0.55, 1.5vw, 3rem);
+    text-align: center;
+}
+.get_your_team_on_Track_main_container_div{
+    display:flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    gap: 50px;
+    text-align: left;
+}
+
+.get_your_team_on_Track_child_container_div > h4{
+    color: #412A4C;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: 550;
+    position: relative;
+    font-size: 100px;
+    margin-top: 60px;
+}
+.get_your_team_on_Track_child_container_div > h6{
+    color: #412A4C;
+    font-size: clamp( 1.5rem * 0.9, 1.65vw, 1.5rem );
+    line-height: 1.5;
+    margin-right: 50px;
+    margin-top: -200px;
+}
+.get_your_team_on_Track_child_container_div > p {
+    color: #564260;
+    line-height: 1.5;
+    font-size: clamp( 1rem * 0.95, 1vw, 1rem );
+    margin-top: -18px;
+    margin-bottom: 58px;
+}
