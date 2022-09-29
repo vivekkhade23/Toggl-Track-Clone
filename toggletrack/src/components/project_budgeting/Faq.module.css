@@ -1,0 +1,68 @@
+.mainDiv {
+    width: 80%;
+    margin: auto;
+    margin-left: 6rem;
+    margin-right: 3rem;
+  }
+  .mainDiv:nth-last-child(1) {
+    border-bottom: 1px solid black;
+  }
+  .faqsr{
+    background-color:#412A4C;
+    color: #FCE5D8 
+  }
+  .faq{
+    margin-bottom:5rem;
+  }
+
+
+  .box{
+            flex:1;
+                      text-align:left;
+                      margin-top:14px;
+                      margin-bottom:14px;
+                      font-size:25px;
+                      font-weight:bold
+  }
+  /* #FCE5D8 */
+  @media  screen and (min-width:79px)and (max-width:421px) {
+    /* STYLES HERE */
+    .box{
+        flex:1;
+        text-align:left;
+        margin-top:6px;
+        margin-bottom:6px;
+        font-size:15px;
+        font-weight:bold
+    }
+    .faqsr{
+        background-color:#412A4C;
+        color: #FCE5D8 
+      }
+      .mainDiv {
+        width: 80%;
+        /* margin: auto; */
+        margin-left: -0.5rem;
+      }
+}
+/* @media  screen and  (min-width:421px) {
+    STYLES HERE
+    .box{
+        flex:1;
+        text-align:left;
+        margin-top:6px;
+        margin-bottom:6px;
+        font-size:18px;
+        font-weight:bold
+    }
+    .faqsr{
+        background-color:#412A4C;
+        color: #FCE5D8 
+      }
+      .mainDiv {
+        width: 100%;
+        margin: auto;
+        margin-left: 3rem;
+        margin-right: 6rem;
+      }
+} */

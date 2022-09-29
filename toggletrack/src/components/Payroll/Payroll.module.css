@@ -5,6 +5,9 @@
     padding-top: 100px;
     padding-bottom: 50px;
   }
+  .one{
+    color: #e57cd8;
+  }
   .heading_div > h1 {
     font-size: 57.372px;
     font-family: "GT Haptik Medium", sans-serif;
@@ -151,15 +154,46 @@
     margin-bottom: 25px;
   }
   .design_cards_div > div:nth-child(1) > img {
-    width: 145px;
+    width: 50%;
+    margin-top: 3rem;
   }
   .design_cards_div > div:nth-child(2) > img {
-    width: 200px;
+    width: 50%;
   }
   .design_cards_div > div:nth-child(3) > img {
-    width: 190px;
+    width: 50%;
   }
 
+  .divfirst{
+    width:"70%" ;
+    color:white;
+    display:flex;
+        margin-left:12rem;
+        margin-top:4rem;
+  }
+  .divfirst1{
+    width:60%;
+     background-color:rgb(65,42,76);
+    height:15rem;
+    font-size:1.5rem
+  }
+
+  .divfirst2{
+    background-color:rgb(65,42,76);
+    height:15rem;
+  }
+  .para1{
+    margin-top:2.5rem;
+    text-align:left;
+    margin-left:3.5rem
+  }
+  .para2{
+    font-size:1rem;
+    color:rgb(206,208,116);
+     text-align:left;
+     margin-left:3.5rem;
+    margin-top:2rem
+  }
 
   .FAQsMainDiv {
     background-color: #412a4c;
@@ -237,12 +271,18 @@
       }
       .design_cards_div > div:nth-child(1) > img {
         width: 80%;
+       
       }
       .design_cards_div > div:nth-child(2) > img {
-        width: 80%;
+        width: 67%;
       }
       .design_cards_div > div:nth-child(3) > img {
-        width: 80%;
+        width: 67%;
+      }
+
+      .card{
+                         
+
       }
 }
 
