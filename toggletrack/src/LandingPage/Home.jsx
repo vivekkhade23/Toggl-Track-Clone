@@ -32,9 +32,13 @@ const Home = () => {
             </Flex>
         
         </Flex>
-      <p color="#FCE5D8" className="tag">By signing up, you agree to our<a href="/track/legal/terms/"><span class="css-pqp2z0-Root eze9oxr1">terms of service</span></a>, <a href="/track/legal/privacy/"><span class="css-pqp2z0-Root eze9oxr1">privacy policy</span></a> and to receiving marketing communication from Toggl Track. You can opt out anytime.</p>
+      <p  className="tag">By signing up, you agree to our<a href="/track/legal/terms/"><span class="css-pqp2z0-Root eze9oxr1">terms of service</span></a>, <a href="/track/legal/privacy/"><span class="css-pqp2z0-Root eze9oxr1">privacy policy</span></a> and to receiving marketing communication from Toggl Track. You can opt out anytime.</p>
+  <br/>
+  <br/>
+ 
+      <p  class="billion">Trusted by over 6 million users across 120 countries</p>
 
-       
+      <br/>
     </Box>
 
     <Box></Box>

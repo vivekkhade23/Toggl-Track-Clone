@@ -29,6 +29,15 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+.billion{
+    color: #D5D0D7;
+    font-family: 'GT Haptik Medium',sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: clamp( 1rem * 0.95, 1vw, 1rem );
+    text-transform: uppercase;
+    letter-spacing: 0.25px;
+}
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -90,6 +99,9 @@
 .tag{
     color: #FCE5D8;
     font-size: 12px;
+    margin-top: 20px;
+    padding-left: 80px; 
+    max-width: 84%;
     line-height: 1.4;
 } 
 .tracking{

@@ -106,26 +106,44 @@ const HomeTwo = () => {
    
     </Box>
 
-    <Box sx={{background:"#412A4C",height:"auto",padding:"2rem",width:"100%"}}>
+    <Box sx={{background:"#412A4C",height:"auto",padding:"4rem 2rem",width:"100%"}}>
         <Heading class="swit">Switch to the time tracking tool 70,000+ teams across the world swear by</Heading>
-        <br/>
-        <br/>
+        
+        
        <Box id="priya">
         <Heading class="swits">Sign up for free</Heading>
         <p id="all">All plans come with a free, 30-day trial of Toggl Track Premium—no credit card required. Upgrade at the end of the trial or continue using Track for free.</p>
         <br/>
-        <Flex>
-        <button type="button" class="svg"><svg width="28" height="28" viewBox="0 0 20 20"><g fill="none"><path d="M17.876 10.284c0-.574-.052-1.127-.147-1.657H10.1v3.134h4.36a3.726 3.726 0 01-1.617 2.444v2.033h2.618c1.531-1.41 2.415-3.487 2.415-5.954z" fill="#4285F4"></path><path d="M10.1 18.2c2.187 0 4.02-.725 5.36-1.962l-2.617-2.033c-.725.486-1.653.773-2.743.773-2.11 0-3.895-1.424-4.532-3.339H2.862v2.099A8.097 8.097 0 0010.1 18.2z" fill="#34A853"></path><path d="M5.568 11.639a4.869 4.869 0 01-.254-1.539c0-.534.092-1.053.254-1.539V6.462H2.862A8.097 8.097 0 002 10.1c0 1.307.313 2.544.862 3.638l2.706-2.099z" fill="#FBBC05"></path><path d="M10.1 5.222c1.19 0 2.257.408 3.096 1.21L15.52 4.11C14.117 2.803 12.283 2 10.1 2a8.097 8.097 0 00-7.238 4.462l2.706 2.099c.637-1.915 2.422-3.34 4.532-3.34z" fill="#EA4335"></path></g></svg>Sign up via Google</button>
-       
+        <Flex sx={{gap:"20px"}}>
+        <Flex sx={{display:"flex",justifyContent:"center"}}  className="svg">
+        <Image width="30%" height="87%" src="data:image/png;base64,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"/>
+        <Button class='up'>Sign up via Google</Button>
+       </Flex>
+        
+       <Flex sx={{display:"flex",justifyContent:"center"}}  className="svg">
+        <Image s height="91%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAAB8CAMAAAC2cNUjAAAAaVBMVEUAAAD////7+/vr6+vx8fHJycni4uI4ODj4+Pjo6Oi1tbUUFBTNzc0oKCg7OzvX19dhYWF3d3dVVVWWlpZoaGgeHh5vb2+rq6uioqLAwMBKSkqIiIhPT08jIyMZGRlcXFwLCwsvLy9/f38XEoGUAAAD+UlEQVRoge2ba5eiMAyGK5Q7ioCIgPf//yNXLo60TanWZM7uOft+mznEx5a0TdLIVr8m9h+1JMfLfgXF423Cdr+ASvcJeyggR3ktG7UmRmUFe4p4VCV76UKJ4sWMxDpClB/MSSymQ/lrgcTo1lUojomdTQb2qK1IMq5ge1QskVhDheIyqQqpULmMuhtNLFGRTGI+Feouk/ZmGzuUowwqokLVMunwhpEdSlq9rH3HyAoVyoNyyVDy8k3fsrJCdSKpfs/KCrX52CWsUTZjskMJ+5/3/he0QGUvUPHG0v0G1TxBt/kZz6Mocpe29wVUlDV1WR7qJvPFTxj3iqqIp387ftNd2uBUVetNsasz/hHKybri/JqnzbZMX8s0Pu66OJv+5t69ZaKCHAwzQBSvZeuHkkvpy/PDvf1affKhFjiTIVQMm/ffdx9HT5zjxvuT7kHGjsrIVJR/1NsPk5mXTeodcmDgojrHgFLCE3sd3UVUaf6E95X4C6jObP+RMi0KmySwBNQBnTQPOuYoj4DEEg6g+JUCxXIAdSEhvaLeFwpxQc1UAm7BFzYZe82DgR8U6tqFSD8oN6Em/aAoBiWl/BPK0Z4b9pIz1gnVmC0/1UmOrhnZmlLO4RFFsFGouR2jmj81YR1RShL9tXKFNKHwdwogCx9Qar7+rQqVNKLwXxWUCA0o/NMXylgZiVfcHB1KTti/FuB/E+qKjSp1KAcdBdZWe5SLTYKz1h7lo6PAQkaPysy2H0qbyqXoKO2o8FFgHZcGBRZoaN4VeGdBgwJr7j0K/ww5QaWSHqXUzL8XVJ+m2QP151WFjoKuzQZUYbb9VLrYAj/bhtx9QFFkceqRP6Ao8m11WAOKJOFW3tYYcuK7IGNHGIUfSDM1wBhRNNm9B6Hwj/xeCVikI6kksIoDKIJF3EtIUicUSSXroXOqoBwKdx9Uyigadx8UNBIKP5SZwepwjlrdCFlMGBVNOWtSJ6L8Kx0qE1FKUwOegpWEonOMWkatjJcclnrWpGcogurPoOd5PEM5G7OZjSIVRXRqQXV2omH5EIrkbUElfRonvMLXLxRrC7o9GLVDJt1CLQo7q5vn36R3jWKiKqNwHd5dQqF6htiKoV5B403hdmVAoU2hFNxCd/hYUbVc/QHbBVBISqUTbILACKt1dyKyvt80WrUeA6NCQyOEUQFQaNc0rHzJgkjaNpxQP4ebY16W3a7Vx8NHsBFH3/ED+ka1jbPnW+BZfQFTwBy6O1hsLvLO8me0sTwxvNnJTyW6BuallqmwnF8Wn+5wZzKPtzNaUmq7ppa7s3jdDrQkKJd6AEPvcKmSJKl28UJ7lrERzMnSVOlfAnnc8NS/+OONvwr1B3V4MQgU8bqCAAAAAElFTkSuQmCC"/>
+        <Button class='up'>Sign up via Apple</Button>
+       </Flex>
         </Flex>
         <br/>
         <Flex className="sirf">
           <Image height="99%" src="https://img.icons8.com/ios-filled/2x/circled-envelope.png"/>
-        <Button className="sirf">Sign up with e-mail</Button>
+        <Button class='up'>Sign up with e-mail</Button>
         </Flex>
+        <br/>
+        <br/>
+        <br/>
+
+        <p >By signing up, you agree to our terms of service, privacy policy and to receiving marketing communication from Toggl Track. You can opt out anytime.</p>
      
        </Box>
-       <Box id="rajawat"></Box>
+       <Box id="rajawat">
+        <Heading className='prefer'>Prefer a product demo instead?</Heading>
+        <br/>
+        <p class="teamss">Teams of 10+ are eligible for a personalized demo to see how Toggl Track can meet your time tracking goals</p>
+    <br/>
+        <a class="demo" href="/track/demo-request/">Book a demo</a>
+       </Box>
 
     </Box>
 
