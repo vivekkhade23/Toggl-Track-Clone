@@ -1,0 +1,42 @@
+.color{
+    color:black;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 25px;
+    height: 90px;
+    width: 100%;
+}.sidebar{
+    color: white;
+    width:500px;
+border: 1px solid;
+}
+.container{
+    display: flex;
+
+}
+.text{
+    font-weight: 400;
+    font-size: 19px;
+    margin-right: 20px;
+    color: black;
+}
+
+.input{
+    width: 200px;
+    /* border: 1px solid black; */
+    /* color: black; */
+}
+.display{
+    display: flex;
+}
+.modal{
+    border: 1px solid red;
+    color: black;
+    margin-left: 900px;
+
+}
+.modalbutton{
+    color: white;
+    background-color: #dd6fd1;
+    /* border: 1px solid red; */
+    background-color: #dd6fd1;
+}
