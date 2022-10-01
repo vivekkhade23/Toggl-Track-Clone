@@ -1,0 +1,38 @@
+.employee_header_section{
+
+    margin: 30px auto 60px;
+    max-width: 1100px;
+}
+.faq_question_h4_main_main_div{
+    /* background-color: rgb(229, 124, 216); */
+    border-style: solid;
+    border-color: rgb(44, 19, 56);
+    border-image: initial;
+    text-align: left;
+    
+    border-width: 1px 0px 0px;
+    padding : 2rem 40px;
+}
+
+.faq_question_h4_main_div{
+    font-family: "GT Haptik Medium", sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    line-height: 1.35;
+    display: flex;
+    justify-content:space-between;
+    width: 98%;
+    margin-right: 20px;
+    color: rgb(252, 229, 216);
+    margin: 0;
+    cursor: pointer;
+    
+}
+.faq_question_p{
+    color: rgb(65, 42, 76);
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: clamp(0.95rem, 1vw, 1rem);
+    /* background-color: rgb(229, 124, 216); */
+    padding-bottom: 60px;
+}
