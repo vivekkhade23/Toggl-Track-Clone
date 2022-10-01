@@ -5,7 +5,7 @@ import Signup from '../components/LoginSignup/Signup'
 import { Payroll } from '../components/Payroll/Payroll'
 import { ProjectBudgeting } from '../components/project_budgeting/ProjectBudgeting'
 import Home from '../LandingPage/Home'
-import {Route,Routes} from "react-router-dom"
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
 import Client from '../components/client/Client'
 import Price from '../PricingComp/Price'
 import Keyfeatures from '../components/Keyfeatures/Keyfeatures'
@@ -15,10 +15,11 @@ import NavbarProduct from '../components/navbar/NavbarProduct'
 function AllRoutes() {
   return (
     <div>
+      {/* <Router> */}
               <Routes >
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<NavbarProduct />} />
-        <Route Path ="/key-fetures" element={<Keyfeatures/>}/>
+        <Route Path="/key-fetures" element={<Keyfeatures/>}/>
         <Route path="/pricing" element={<Price />} />
         <Route path="/billing-invoicing" element={<Billing />} />
         <Route path="/payroll" element={<Payroll />} />
@@ -29,6 +30,7 @@ function AllRoutes() {
         <Route path="#" element={<Home />} />
 
       </Routes>
+      {/* </Router> */}
     </div>
   )
 }
