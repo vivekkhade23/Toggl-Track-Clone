@@ -2,6 +2,8 @@ import { Box, SimpleGrid,Heading ,Image,Flex,Button} from '@chakra-ui/react';
 import React from 'react'
 import "./hometwo.css"
 import team from "./cs-team-sweatandco.jpg"
+import news from  "./cs-newlogic.jpg"
+import teamss from "./case-study-perception-engineering.jpg"
 import down from "./download.jpg"
 
 const HomeTwo = () => {
@@ -30,7 +32,7 @@ const HomeTwo = () => {
             <p class="read">Read case study</p>
             <br/>
          
-          <Image sx={{borderRadius:"12px"}} w={["auto","auto","93%"]} h={["auto","auto","40%"]} src={team}/>
+          <Image sx={{borderRadius:"12px"}} w={["auto","auto","93%"]} h={["auto","auto","40%"]} src={news}/>
           </Box>
           <Box sx={{marginLeft:"auto"}}>
           <h4 className="incr">20% increase in profitability</h4>
@@ -41,7 +43,7 @@ const HomeTwo = () => {
             <p class="read">Read case study</p>
             <br/>
          
-          <Image sx={{borderRadius:"12px"}} w={["auto","auto","93%"]} h={["auto","auto","40%"]} src={team}/>
+          <Image sx={{borderRadius:"12px"}} w={["auto","auto","93%"]} h={["auto","auto","40%"]} src={teamss}/>
           </Box>
 
 

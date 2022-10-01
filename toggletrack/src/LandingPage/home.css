@@ -75,6 +75,7 @@
 #pbtn{
     font-family: 'GT Haptik Medium',sans-serif;
     font-size: 1rem;
+    
     padding: 17px 38px;
     -webkit-align-items: center;
     -webkit-box-align: center;
@@ -95,6 +96,7 @@
 }
 #fl{
     padding-left: 80px; 
+    gap:16px;
 }
 .tag{
     color: #FCE5D8;
