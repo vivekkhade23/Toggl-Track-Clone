@@ -17,7 +17,9 @@ const NavbarProduct = () => {
                             FOR EVERY NEED
                         </p>
                     </div>
-                    <div className={styles.NavbarProduct_child_mainContainer_mydiv} >
+                    <div onClick={() => {
+                            navigate("")
+                        }}  className={styles.NavbarProduct_child_mainContainer_mydiv} >
                         <div className={styles.NavbarProduct_child_child_mainContainer_mydiv}>
                             <div>
                                 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTUiIHZpZXdCb3g9IjAgMCA1MCA1NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIyLjgzMDIiIGhlaWdodD0iMjIuODMwMiIgZmlsbD0iI0RENkZEMSIvPgo8cmVjdCB4PSIyNi45ODE0IiB5PSI1LjE4OTQ1IiB3aWR0aD0iMjIuODMwMiIgaGVpZ2h0PSIyMi44MzAyIiBmaWxsPSIjNDEyQTRDIi8+CjxyZWN0IHk9IjI2Ljk4MDUiIHdpZHRoPSIyMi44MzAyIiBoZWlnaHQ9IjIyLjgzMDIiIGZpbGw9IiM0MTJBNEMiLz4KPHJlY3QgeD0iMjYuOTgxNCIgeT0iMzIuMTY5OSIgd2lkdGg9IjIyLjgzMDIiIGhlaWdodD0iMjIuODMwMiIgZmlsbD0iI0RENkZEMSIvPgo8L3N2Zz4K" alt="" />
@@ -31,9 +33,7 @@ const NavbarProduct = () => {
                                 </p>
                             </div>
                         </div>
-                        <div onClick={() => {
-                            navigate("/employee-time")
-                        }} className={styles.NavbarProduct_child_child_mainContainer_mydiv}>
+                        <div className={styles.NavbarProduct_child_child_mainContainer_mydiv}>
                             <div>
                                 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTMiIGhlaWdodD0iNTMiIHZpZXdCb3g9IjAgMCA1MyA1MyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGVsbGlwc2UgY3g9IjI2LjQwNzMiIGN5PSIzMS43NTQzIiByeD0iMTkuMzM1MyIgcnk9IjIxLjI0NTUiIGZpbGw9IiNGRUZCRkEiLz4KPHBhdGggZD0iTTE4LjQ4MjQgMzkuNDE4NkMyMC43MDEyIDQzLjI0OTcgMjguOTQyNSA0OC4xMjU4IDM1LjI4MiAzOS4wNzAzIiBzdHJva2U9IiNGMkJERUMiIHN0cm9rZS13aWR0aD0iMS43NTIxOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxlbGxpcHNlIGN4PSIyNi40MDczIiBjeT0iMzEuNzU0MyIgcng9IjE5LjMzNTMiIHJ5PSIyMS4yNDU1IiBmaWxsPSIjRkVGQkZBIi8+CjxwYXRoIGQ9Ik0xOC40ODI0IDM5LjQxODZDMjAuNzAxMiA0My4yNDk3IDI4Ljk0MjUgNDguMTI1OCAzNS4yODIgMzkuMDcwMyIgc3Ryb2tlPSIjRjJCREVDIiBzdHJva2Utd2lkdGg9IjEuNzUyMTkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8ZWxsaXBzZSBjeD0iMjYuNDA3MyIgY3k9IjMxLjc1NDMiIHJ4PSIxOS4zMzUzIiByeT0iMjEuMjQ1NSIgZmlsbD0iI0ZFRkJGQSIvPgo8cGF0aCBkPSJNMTguNDgyNCAzOS40MTg2QzIwLjcwMTIgNDMuMjQ5NyAyOC45NDI1IDQ4LjEyNTggMzUuMjgyIDM5LjA3MDMiIHN0cm9rZT0iI0YyQkRFQyIgc3Ryb2tlLXdpZHRoPSIxLjc1MjE5IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHBhdGggZD0iTTEyLjA2ODggMzAuOTc3MkM3LjIxNDk5IDMyLjE2MjQgNy4xMzI2MyAzNS4wNjIyIDcuNTMzNjYgMzYuNTk0MkM4LjM2OTQyIDM4LjA5NjkgNy44MjQ0NiAzNy43MDUxIDcuNTMzNjYgMzYuNTk0MkM2LjkzMjc4IDM1LjUxMzkgNS42MTgxOSAzMy40NTQzIDIuOTgyMjggMjkuOTc4N0MtMTEuMDUwMiAxMS40NzYxIDI4LjU3NiAtMC42Mzk1MDIgMzYuMTQ4MSAwLjAyNjExMTZDNDYuMTQzMyAwLjAyNjExMTYgNjEuNTkwNSAxMS42MDc5IDQ3LjA1MiAyMy45ODgzQzMyLjUxMzUgMzYuMzY4NyAzNi4xNDgxIDIwLjk5MjkgMjkuMzMzMiAyMC45OTI5QzI5LjMzMzIgMjAuOTkyOSA2LjYxNjg2IDE2LjIwMDUgMTIuMDY4OCAzMC45NzcyWiIgZmlsbD0iI0U1N0NEOCIvPgo8L3N2Zz4K" alt="" />
                             </div>

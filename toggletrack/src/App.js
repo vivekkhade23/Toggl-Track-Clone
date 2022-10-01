@@ -11,7 +11,7 @@ function App() {
       {/* <ProjectBudgeting/> */}
       <WithSubnavigation />
       <AllRoutes />
-      <LargeWithLogoCentered/>
+      {/* <LargeWithLogoCentered/> */}
       {/* <Signup/> */}
     </div>
   );

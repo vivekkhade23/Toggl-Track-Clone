@@ -8,6 +8,7 @@ import Home from '../LandingPage/Home'
 import {Route,Routes} from "react-router-dom"
 import Client from '../components/client/Client'
 import Price from '../PricingComp/Price'
+import Keyfeatures from '../components/Keyfeatures/Keyfeatures'
 
 
 function AllRoutes() {
@@ -15,6 +16,7 @@ function AllRoutes() {
     <div>
               <Routes >
         <Route path="/" element={<Home />} />
+        <Route Path ="/key-fetures" element={<Keyfeatures/>}/>
         <Route path="/pricing" element={<Price />} />
         <Route path="/billing-invoicing" element={<Billing />} />
         <Route path="/payroll" element={<Payroll />} />
