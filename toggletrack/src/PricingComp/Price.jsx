@@ -19,6 +19,8 @@ import {
   MenuDivider,
 } from '@chakra-ui/react'
 import image from "./cs-team-sweatandco.jpg"
+import Toggle from './Toggle/Toggle'
+import EmployeeFAQ from './Employee_FAQ/EmployeeFAQ'
 
 const Price = () => {
   return (
@@ -29,6 +31,9 @@ const Price = () => {
             <Text sx={{color:"#fff2d3",marginTop:"30px",textAlign:"center"}}>No credit card required. All plans come with a free, 30-day trial of our Premium features.</Text>
 
             <Text sx={{color:"white",marginTop:"30px",textAlign:"center"}}>Choose your billing:</Text>
+            <br/>
+            <Toggle/>
+            <br/>
             <SimpleGrid sx={{padding:"4rem 2rem",gap:"14px"}} columns={[1,2,2,4]}>
               <Box sx={{background:"#412a4c",height:"auto",padding:"2rem 1rem",marginTop:"20px"}}>
                 <Text sx={{fontWeight:"500",color:"#fff2d3",marginLeft:"30px",textAlign:"left",fontSize:"29px"}}>Free</Text>
@@ -50,11 +55,11 @@ const Price = () => {
 
 
               <Box sx={{background:"#412a4c",height:"auto",padding:"2rem 1rem",marginTop:"20px"}}>
-              <Text sx={{fontWeight:"500",color:"#fff2d3",marginLeft:"30px",textAlign:"left",fontSize:"29px"}}>Free</Text>
+              <Text sx={{fontWeight:"500",color:"#fff2d3",marginLeft:"30px",textAlign:"left",fontSize:"29px"}}>Starter</Text>
                 <p style={{color:"#fff2d3",marginLeft:"30px",textAlign:"left",marginTop:"10px"}}>Seamless time tracking and reporting designed with freelancers in mind</p>
                 <div class="Wrapper">
-                  <div>$0</div>
-                  <div>Free for up to 5 users.</div>
+                  <div>$9</div>
+                  <div>per user per month.</div>
                   </div>
                   <ul class="peatures"><li class="pli"><svg width="17" height="14" viewBox="0 0 17 14"><path d="M14.914 0l2.121 2.121L5.721 13.435l-.055-.055-.01.01L0 7.731l2.121-2.121L5.712 9.2 14.914 0z" stroke="#E57CD8" fill="#E57CD8"></path></svg>Unlimited time tracking</li>
                   <li class="pli"><svg width="17" height="14" viewBox="0 0 17 14"><path d="M14.914 0l2.121 2.121L5.721 13.435l-.055-.055-.01.01L0 7.731l2.121-2.121L5.712 9.2 14.914 0z" stroke="#E57CD8" fill="#E57CD8"></path></svg>Unlimited projects, clients, and tags</li>
@@ -76,7 +81,7 @@ const Price = () => {
                 <p style={{color:"#e57cd8",marginLeft:"30px",textAlign:"left",marginTop:"10px"}}>Seamless time tracking and reporting designed with freelancers in mind</p>
                 <div class="Wrappers">
                   <div>$ 18</div>
-                  <div>Free for up to 5 users.</div>
+                  <div>per user per month.</div>
                   </div>
                   <ul class="peatures"><li class="plip"><svg width="17" height="14" viewBox="0 0 17 14"><path d="M14.914 0l2.121 2.121L5.721 13.435l-.055-.055-.01.01L0 7.731l2.121-2.121L5.712 9.2 14.914 0z" stroke="#E57CD8" fill="#E57CD8"></path></svg>Unlimited time tracking</li>
                   <li class="plip"><svg width="17" height="14" viewBox="0 0 17 14"><path d="M14.914 0l2.121 2.121L5.721 13.435l-.055-.055-.01.01L0 7.731l2.121-2.121L5.712 9.2 14.914 0z" stroke="#E57CD8" fill="#E57CD8"></path></svg>Unlimited projects, clients, and tags</li>
@@ -160,19 +165,12 @@ const Price = () => {
 
        <Box sx={{background:"#412a4c",width:"100%",height:"auto",padding:"15rem 2rem"}}>
         <Heading sx={{color:"#e57cd8"}}>FAQs</Heading>
+        <EmployeeFAQ/>
 
-   <div class="Root"> 
-   <div class="Section">
-    <div class="SectionHeader">
-    <h4 class="SectionTitle">Is Toggl Track free for an unlimited number of users?</h4>
-    <div>
-      <div class="IconArrowDown"></div></div></div></div>
-      <div class="Section">
-        <div class="SectionHeader ">
-          <h4 class="SectionTitle">How is the subscription fee calculated for paid plans?</h4>
-          <div>
-            <div class="IconArrowDown"></div></div></div></div><div class="Section"><div class="SectionHeader"><h4 class="SectionTitle">You mentioned that Toggl Track is free for up to 5 users. If I’m on a paid plan, do I only need to pay for the 6th user?</h4><div><div class="IconArrowDown "></div></div></div></div><div class="Section"><div class="SectionHeader"><h4 class="SectionTitle">Does Toggl Track offer discounts?</h4><div><div class="IconArrowDown "></div></div></div></div><div class="Section"><div class="SectionHeader"><h4 class="SectionTitle">It keeps taking me to a page where it says I’m signing up for a trial of Premium. I’d just like to sign up for a Free plan.</h4><div><div class="IconArrowDown"></div></div></div></div><div class="Section"><div class="SectionHeader "><h4 class="SectionTitle">If I sign up for a Free plan but add 6 users to my Workspace during my free Premium trial, what will happen to the 6th user once the 30 days are up?</h4><div><div class="IconArrowDown"></div></div></div></div><div class="Section "><div class="SectionHeader "><h4 class="SectionTitle ">If I use your Premium features during the trial, what happens to all the data related to paid features (Tasks, Billable Rates, etc.) once my Workspace downgrades to the Free plan?</h4><div><div class="IconArrowDown"></div></div></div></div><div class="Section"><div class="SectionHeader"><h4 class="SectionTitle">Does Toggl Track have desktop or mobile apps? Are they free?</h4><div><div class="IconArrowDown "></div></div></div></div><div class="Section"><div class="SectionHeader"><h4 class="SectionTitle">If I have a paid Toggl Plan subscription, do I need to pay for Toggl Track?</h4><div><div class="IconArrowDown"></div></div></div></div></div>
-
+  <br/>
+  <br/>
+  <br/>
+  <br/>
 
 
             <Box sx={{background:"#fce5d8",height:"auto",width:"85%",padding:"2rem",margin:"auto"}}>
@@ -666,6 +664,48 @@ We <em style={{color:"#e57cd8"}}>have an app</em> for that!</Heading>
 
 
        </Box>
+
+       <Box sx={{background:"#412A4C",height:"auto",padding:"4rem 2rem",width:"100%"}}>
+        <Heading class="swit">Ready to get on <em style={{color:"#e57cd8 "}}>Track?</em> </Heading>
+        
+ 
+       <Box id="priya">
+        <Heading class="swits">Sign up for free</Heading>
+        <p id="all">All plans come with a free, 30-day trial of Toggl Track Premium—no credit card required. Upgrade at the end of the trial or continue using Track for free.</p>
+        <br/>
+        <Flex sx={{gap:"20px"}}>
+        <Flex sx={{display:"flex",justifyContent:"center"}}  className="svg">
+        <Image width="30%" height="87%" src="data:image/png;base64,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"/>
+        <Button class='up'>Sign up via Google</Button>
+       </Flex>
+        
+       <Flex sx={{display:"flex",justifyContent:"center"}}  className="svg">
+        <Image s height="91%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAAB8CAMAAAC2cNUjAAAAaVBMVEUAAAD////7+/vr6+vx8fHJycni4uI4ODj4+Pjo6Oi1tbUUFBTNzc0oKCg7OzvX19dhYWF3d3dVVVWWlpZoaGgeHh5vb2+rq6uioqLAwMBKSkqIiIhPT08jIyMZGRlcXFwLCwsvLy9/f38XEoGUAAAD+UlEQVRoge2ba5eiMAyGK5Q7ioCIgPf//yNXLo60TanWZM7uOft+mznEx5a0TdLIVr8m9h+1JMfLfgXF423Cdr+ASvcJeyggR3ktG7UmRmUFe4p4VCV76UKJ4sWMxDpClB/MSSymQ/lrgcTo1lUojomdTQb2qK1IMq5ge1QskVhDheIyqQqpULmMuhtNLFGRTGI+Feouk/ZmGzuUowwqokLVMunwhpEdSlq9rH3HyAoVyoNyyVDy8k3fsrJCdSKpfs/KCrX52CWsUTZjskMJ+5/3/he0QGUvUPHG0v0G1TxBt/kZz6Mocpe29wVUlDV1WR7qJvPFTxj3iqqIp387ftNd2uBUVetNsasz/hHKybri/JqnzbZMX8s0Pu66OJv+5t69ZaKCHAwzQBSvZeuHkkvpy/PDvf1affKhFjiTIVQMm/ffdx9HT5zjxvuT7kHGjsrIVJR/1NsPk5mXTeodcmDgojrHgFLCE3sd3UVUaf6E95X4C6jObP+RMi0KmySwBNQBnTQPOuYoj4DEEg6g+JUCxXIAdSEhvaLeFwpxQc1UAm7BFzYZe82DgR8U6tqFSD8oN6Em/aAoBiWl/BPK0Z4b9pIz1gnVmC0/1UmOrhnZmlLO4RFFsFGouR2jmj81YR1RShL9tXKFNKHwdwogCx9Qar7+rQqVNKLwXxWUCA0o/NMXylgZiVfcHB1KTti/FuB/E+qKjSp1KAcdBdZWe5SLTYKz1h7lo6PAQkaPysy2H0qbyqXoKO2o8FFgHZcGBRZoaN4VeGdBgwJr7j0K/ww5QaWSHqXUzL8XVJ+m2QP151WFjoKuzQZUYbb9VLrYAj/bhtx9QFFkceqRP6Ao8m11WAOKJOFW3tYYcuK7IGNHGIUfSDM1wBhRNNm9B6Hwj/xeCVikI6kksIoDKIJF3EtIUicUSSXroXOqoBwKdx9Uyigadx8UNBIKP5SZwepwjlrdCFlMGBVNOWtSJ6L8Kx0qE1FKUwOegpWEonOMWkatjJcclnrWpGcogurPoOd5PEM5G7OZjSIVRXRqQXV2omH5EIrkbUElfRonvMLXLxRrC7o9GLVDJt1CLQo7q5vn36R3jWKiKqNwHd5dQqF6htiKoV5B403hdmVAoU2hFNxCd/hYUbVc/QHbBVBISqUTbILACKt1dyKyvt80WrUeA6NCQyOEUQFQaNc0rHzJgkjaNpxQP4ebY16W3a7Vx8NHsBFH3/ED+ka1jbPnW+BZfQFTwBy6O1hsLvLO8me0sTwxvNnJTyW6BuallqmwnF8Wn+5wZzKPtzNaUmq7ppa7s3jdDrQkKJd6AEPvcKmSJKl28UJ7lrERzMnSVOlfAnnc8NS/+OONvwr1B3V4MQgU8bqCAAAAAElFTkSuQmCC"/>
+        <Button class='up'>Sign up via Apple</Button>
+       </Flex>
+        </Flex>
+        <br/>
+        <Flex className="sirf">
+          <Image height="99%" src="https://img.icons8.com/ios-filled/2x/circled-envelope.png"/>
+        <Button class='up'>Sign up with e-mail</Button>
+        </Flex>
+        <br/>
+        <br/>
+        <br/>
+
+        <p >By signing up, you agree to our terms of service, privacy policy and to receiving marketing communication from Toggl Track. You can opt out anytime.</p>
+     
+       </Box>
+       <Box id="rajawat">
+        <Heading className='prefer'>Prefer a product demo instead?</Heading>
+        <br/>
+        <p class="teamss">Teams of 10+ are eligible for a personalized demo to see how Toggl Track can meet your time tracking goals</p>
+    <br/>
+        <a class="demo" href="/track/demo-request/">Book a demo</a>
+       </Box>
+
+    </Box>
+
 
     
     </Box>

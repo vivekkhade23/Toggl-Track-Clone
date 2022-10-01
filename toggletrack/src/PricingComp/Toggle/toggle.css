@@ -1,0 +1,87 @@
+.btn {
+    /* border: 3px solid #1a1a1a; */
+    border: none;
+    width: 180px;
+    background-color: white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50px;
+    position: relative;
+    text-align: center;
+    transition: 600ms ease, color 600ms ease;
+}
+
+#toggle_container {
+    background-color: white;
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    padding: 2px;
+    width: 350px;
+    border-radius: 50px;
+    margin: auto;
+}
+
+#toggle_container input[type=radio].toggle {
+    display: none;
+    color: black;
+}
+
+#toggle_container input[type=radio].toggle+label {
+    cursor: pointer;
+    min-width: 60px;
+    color: black;
+}
+
+#toggle_container input[type=radio].toggle+label:hover {
+    /* background: none; */
+
+    color: black;
+    /* color: white; */
+}
+
+#toggle_container input[type=radio].toggle+label:after {
+    /* background: #e57cd8; */
+    /* background-color: #e57cd8; */
+    color: black;
+    content: "";
+    height: 100%;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+    width: 100%;
+    z-index: -1;
+}
+
+#toggle_container input[type=radio].toggle.toggle-left+label {
+    border-right: 0;
+
+}
+
+#toggle_container input[type=radio].toggle.toggle-left+label:after {
+    left: 100%;
+    /* background-color: red; */
+}
+
+#toggle_container input[type=radio].toggle.toggle-right+label {
+    margin-left: -5px;
+}
+
+#toggle_container input[type=radio].toggle.toggle-right+label:after {
+    left: -100%;
+}
+
+#toggle_container input[type=radio].toggle:checked+label {
+    cursor: default;
+    color: #fff;
+    transition: color 200ms;
+    /* background-color: red; */
+    background-color: #e57cd8;
+    transform: translate(0px, 0);
+    /* transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1); */
+}
+
+#toggle_container input[type=radio].toggle:checked+label:after {
+    left: 0;
+}
