@@ -5,18 +5,44 @@ import logo from "./images/logo.png"
 import { Stack, VStack, Grid, GridItem } from "@chakra-ui/react";
 import { Box, Flex, HStack, Text } from "@chakra-ui/layout";
 import { ViewIcon } from '@chakra-ui/icons'
-
+import { useState } from "react";
+import  Axios  from "axios";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Signup = () => {
+    const navigate = useNavigate();
+    const url = "https://desolate-coast-33231.herokuapp.com/users/signup";
+    const [data, setData] = useState({
+        email: "",
+        password: "",
+    });
+
+    async function submit(e) {
+        e.preventDefault();
+        await Axios.post(url, {
+            email: data.email,
+            password: data.password,
+        })
+            .then(res => {
+                console.log(res.data);
+                alert("Signup Succesfull")
+                navigate("/login")
+            })
+    }
+
+    function handleData(e) {
+        const newData = { ...data }
+        newData[e.target.id] = e.target.value
+        setData(newData)
+        console.log(newData)
+    }
+
 
     return (
         <div className="signup1">
-            
-            
-            
             <Stack className="signup2" gap={"5px"}>
-            <img className="logo" src={logo}/>
+                <img className="logo" src={logo} />
                 <Text fontSize="5xl">
                     <b>
                         Sign up for a <span style={{ color: "#e57cd8" }}>free</span> Toggl
@@ -36,7 +62,7 @@ const Signup = () => {
                 <Flex gap={20}>
                     <Box className="signup4">
                         <Flex paddingTop="30px" textAlign="center" gap={"20px"}>
-                          
+
                             <Flex className="button" gap={"2"}>
                                 <img
                                     src="https://img.icons8.com/fluency/30/000000/google-logo.png"
@@ -44,7 +70,7 @@ const Signup = () => {
                                 />
                                 <button style={{ fontWeight: "bold" }}>Sign up via Google</button>
                             </Flex>{" "}
-                    
+
                             {" "}
                             <Flex className="button" gap={"2"}>
                                 <img
@@ -53,7 +79,7 @@ const Signup = () => {
                                 />
                                 <button style={{ fontWeight: "bold" }}>Sign up via Apple</button>
                             </Flex>{" "}
-                           
+
                         </Flex>
                         <br />
                         <br />
@@ -66,11 +92,14 @@ const Signup = () => {
                         </div>
                         <br />
                         <Box>
-                            <form >
+                            <form onSubmit={(e) => submit(e)}>
                                 <p className="label">Email</p>
                                 <br />
                                 <input
                                     type="text"
+                                    id="email"
+                                    value={data.email}
+                                    onChange={(e) => handleData(e)}
                                     className="inputbox"
                                     placeholder="Email"
                                 />
@@ -80,6 +109,9 @@ const Signup = () => {
                                 <br />
                                 <input
                                     type="password"
+                                    id="password"
+                                    value={data.password}
+                                    onChange={(e) => handleData(e)}
                                     className="inputbox"
                                     placeholder="password"
                                     name="password"
@@ -89,12 +121,7 @@ const Signup = () => {
                                 </div>
                                 <br />
                                 <br />
-                                <input
-                                    type="submit"
-                                    className="submit"
-                                    value="Sign up via email"
-                                    placeholder="password"
-                                />
+                                <Link></Link><button className="submit" type="submit">Sign up via email</button>
                                 <br />
                                 <br />
                                 <p className="label2">
@@ -144,7 +171,7 @@ const Signup = () => {
                 <Box >
                     © 2022 Toggl. All rights reserved.
                 </Box>
-                <Box  textDecoration={"underline"} className="legalterms">
+                <Box textDecoration={"underline"} className="legalterms">
                     Legal Terms
                 </Box>
             </HStack>

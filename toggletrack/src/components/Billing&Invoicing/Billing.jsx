@@ -1,18 +1,11 @@
 import React from 'react'
-import styles from './Billing.module.css'
-
-
-
-
+import styles from "./Billing.module.css"
 
 const Billing = () => {
- 
+
 
      return (
           <>
-              
-              
-
                <div className={styles.Employee_time_tracking_main_div}>
                     <div>
                          <h1>
@@ -33,8 +26,8 @@ const Billing = () => {
                     </div>
                     <div className={styles.Employee_time_tracking_main_button_div}>
                          <div>
-                              <button  >Sign up for free</button> 
-                            
+                              <button  >Sign up for free</button>
+
                          </div>
                          <div className={styles.Employee_time_tracking_main_demo_p_div}>
                               <p>Book a demo</p>
@@ -44,7 +37,7 @@ const Billing = () => {
 
                </div>
 
-             
+
 
 
                <div className={styles.trustedTypes_main_div}>
@@ -54,8 +47,8 @@ const Billing = () => {
                     <img className={styles.trustedTypes_main_div1} src="https://public-assets.toggl.space/ae4e1ee7-9a08-426a-b230-a537a04e9aa6/static/f99eb40e82b76e7bc1642a43dfe5c2cc/a9558/brands-employee-desktop.png" alt="" />
                </div>
 
-            
-            
+
+
 
                <div>
                     <div className={styles.alternative_to_timesheets_main_div}>
@@ -64,7 +57,7 @@ const Billing = () => {
                          </h2>
                     </div>
 
-                   
+
 
                     <div className={styles.Less_timesheets_main_div} >
                          <div>
@@ -80,7 +73,7 @@ const Billing = () => {
                          </div>
                     </div>
 
-                   
+
 
                     <div className={styles.Less_timesheets_main_div} style={{ flexDirection: "row-reverse" }}>
                          <div>
@@ -199,7 +192,7 @@ const Billing = () => {
                </div>
                <div style={{ backgroundColor: "#2d1738", textAlign: "left", marginTop: "50px" }}>
                     <div style={{ width: "80%", margin: "0 auto" }}>
-                        {/*Footer */}
+                         {/*Footer */}
                     </div>
                </div>
 

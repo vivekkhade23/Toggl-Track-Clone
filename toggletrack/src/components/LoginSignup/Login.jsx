@@ -1,14 +1,15 @@
 import { Flex, Text } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import "./login.css";
+import styles from "./login.module.css"
 import { Box } from "@chakra-ui/layout";
 import { ViewIcon, LockIcon } from '@chakra-ui/icons'
 import Axios from "axios"
-import {useNavigate} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 
 
 const Login = () => {
 const navigate = useNavigate();
+const url = "https://desolate-coast-33231.herokuapp.com/users/login"
   const [data, setData] = useState({
     email: "",
     password: "",
@@ -22,7 +23,7 @@ const navigate = useNavigate();
       })
       .then(res=> {
         console.log(res.data);
-        navigate("/home")
+        navigate("/")
       })
   }
 
@@ -34,14 +35,14 @@ const navigate = useNavigate();
   }
 
     return (
-        <Box className="login1">
-            <Box className="login2">
-                <Text className="text1">Log in to your account</Text>
-                <Text className="text2">Let's get tracking!</Text>
+        <Box className={styles.login1}>
+            <Box className={styles.login2}>
+                <Text className={styles.text1}>Log in to your account</Text>
+                <Text className={styles.text2}>Let's get tracking!</Text>
                 <Box className="login3" m={"auto"}>
                     <Flex direction={["column","column","row"]} paddingTop="70px" textAlign="center" gap={"25px"} className="flexbox">
 
-                        <Flex className="loginbutton" gap={"6"} >
+                        <Flex className={styles.loginbutton} gap={"6"} >
                             <img
                                 src="https://img.icons8.com/fluency/30/000000/google-logo.png"
                                 alt="img"
@@ -50,7 +51,7 @@ const navigate = useNavigate();
                         </Flex>{" "}
                      
                         {" "}
-                        <Flex className="loginbutton" gap={"6"}>
+                        <Flex className={styles.loginbutton} gap={"6"}>
                             <img
                                 src="https://img.icons8.com/ios-glyphs/30/000000/mac-client.png"
                                 alt="img"
@@ -102,7 +103,8 @@ const navigate = useNavigate();
                 <Box className="login4">
                     <Text fontSize={"xl"}>Don't have an account?</Text>
                     <br />
-                    <button className="signupfreebtn">Signup for free</button>
+                    <Link to="/signup">
+                    <button className="signupfreebtn">Signup for free</button></Link>
                 </Box>
             </Box>
         </Box>

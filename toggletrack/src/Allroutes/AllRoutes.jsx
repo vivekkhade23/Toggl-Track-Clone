@@ -16,7 +16,7 @@ function AllRoutes() {
   
         {/* <Route path="/pricing" element={<Pricing />} /> */}
         <Route path="/billing-invoicing" element={<Billing />} />
-        <Route path="/employee-time" element={<EmployeeTime />} />
+        {/* <Route path="/employee-time" element={<EmployeeTime />} /> */}
         <Route path="/payroll" element={<Payroll />} />
         <Route path="/project-budget" element={<ProjectBudgeting />} />
         <Route path="/signup" element={<Signup/>} />
