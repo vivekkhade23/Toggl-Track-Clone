@@ -9,6 +9,7 @@ import {Route,Routes} from "react-router-dom"
 import Client from '../components/client/Client'
 import Price from '../PricingComp/Price'
 import Keyfeatures from '../components/Keyfeatures/Keyfeatures'
+import NavbarProduct from '../components/navbar/NavbarProduct'
 
 
 function AllRoutes() {
@@ -16,14 +17,16 @@ function AllRoutes() {
     <div>
               <Routes >
         <Route path="/" element={<Home />} />
+        <Route path="/product" element={<NavbarProduct />} />
         <Route Path ="/key-fetures" element={<Keyfeatures/>}/>
         <Route path="/pricing" element={<Price />} />
         <Route path="/billing-invoicing" element={<Billing />} />
         <Route path="/payroll" element={<Payroll />} />
         <Route path="/project-budget" element={<ProjectBudgeting />} />
         <Route path="/signup" element={<Signup/>} />
-        <Route path="/login" element={<Login/>} />
+        <Route path="/login" element={<Login />} />
         <Route path="/timer/client" element={<Client/>} />
+        <Route path="#" element={<Home />} />
 
       </Routes>
     </div>

@@ -98,6 +98,13 @@ const DesktopNav = () => {
 const [product,setProduct]=useState(false);
 const [why,setWhy]=useState(false)
 
+const handleLog=()=>{
+  navigate("/login")
+}
+
+const handlePrice=()=>{
+  navigate("/pricing")
+}
 
   return ( 
   <div className={styles.desktopdisplay}>
@@ -108,7 +115,7 @@ const [why,setWhy]=useState(false)
     </Text>
   </>
   <>
-    <Text {...buttonProps} className={styles.button} onClick={()=>navigate("/pricing")} >pricing</Text>
+    <Text {...buttonProps} className={styles.button} onClick={handlePrice} >pricing</Text>
     <Text {...disclosureProps} mt={4}>
      {}=
     </Text>
@@ -162,11 +169,12 @@ const [why,setWhy]=useState(false)
               |
             </Button>
             <Button
+            onClick={handleLog}
               as={"a"}
               fontSize={"1rem"}
               fontWeight={400}
               variant={"link"}
-              // href={"#"}
+              
               font={"16px"}
               color={" rgb(255, 243, 237)"}
               fontStyle={"GT Haptik Medium',sans-serif"}
