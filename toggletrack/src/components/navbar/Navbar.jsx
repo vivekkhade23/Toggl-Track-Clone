@@ -7,6 +7,7 @@ import {
   Collapse,
   useColorModeValue,
   useDisclosure,
+  DrawerBody,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -19,17 +20,14 @@ import React, { useState } from "react";
 import NavbarProduct from "./NavbarProduct";
 import {
   Drawer,
-  DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,
 } from '@chakra-ui/react'
 import { useMediaQuery } from "@chakra-ui/react";
 import { AiOutlineBars } from "react-icons/ai"; 
 import WhyTracking from "./Whytracking";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function WithSubnavigation() {
   const navigate=useNavigate()
@@ -72,7 +70,7 @@ export default function WithSubnavigation() {
               fontFamily={"heading"}
               color={useColorModeValue("red.800", "white")}
               className={styles.logo1}
-              onClick={navigate("/")}
+              onClick={()=>navigate("/")}
             >
               <img src={logo1} />
             </Text>
@@ -95,16 +93,16 @@ const DesktopNav = () => {
   const { getDisclosureProps, getButtonProps } = useDisclosure()
   const buttonProps = getButtonProps()
   const disclosureProps = getDisclosureProps()
-const [product,setProduct]=useState(false);
-const [why,setWhy]=useState(false)
 
-const handleLog=()=>{
-  navigate("/login")
-}
 
-const handlePrice=()=>{
-  navigate("/pricing")
-}
+
+// const handleLog=()=>{
+//   navigate("/login")
+// }
+
+// const handlePrice=()=>{
+//   navigate("/pricing")
+// }
 
   return ( 
   <div className={styles.desktopdisplay}>
@@ -115,9 +113,9 @@ const handlePrice=()=>{
     </Text>
   </>
   <>
-    <Text {...buttonProps} className={styles.button} onClick={handlePrice} >pricing</Text>
+   <Link to="/pricing"> <Text {...buttonProps} className={styles.button} >pricing</Text></Link>
     <Text {...disclosureProps} mt={4}>
-     {}=
+     {}
     </Text>
   </>
   <>
@@ -141,12 +139,12 @@ const handlePrice=()=>{
             alignItems={"center"}
             spacing={6}
           >
-            <Button
+            <Text
               as={"a"}
               fontSize={"1rem"}
               fontWeight={400}
-              variant={"link"}
-              href={"#"}
+            width="125px"
+             
               font={"16px"}
               color={" rgb(255, 243, 237)"}
               fontStyle={"GT Haptik Medium',sans-serif"}
@@ -156,24 +154,25 @@ const handlePrice=()=>{
               }}
             >
               Book a demo
-            </Button>
-            <Button
+            </Text>
+            <Text
               as={"a"}
               fontSize={"1rem"}
               fontWeight={400}
-              variant={"link"}
-              href={"#"}
+            
+
               font={"16px"}
               color={" rgb(255, 243, 237)"}
             >
               |
-            </Button>
-            <Button
-            onClick={handleLog}
+            </Text>
+            <Link to="/login">
+            <Text
+          width="125px"
               as={"a"}
               fontSize={"1rem"}
               fontWeight={400}
-              variant={"link"}
+          
               
               font={"16px"}
               color={" rgb(255, 243, 237)"}
@@ -182,14 +181,15 @@ const handlePrice=()=>{
                 bg: "black.300",
               }}
             >
-              Log out
-            </Button>
+              Log In
+            </Text>
+            </Link>
             <Button
               display={{ base: "none", md: "inline-flex" }}
               fontSize={"sm"}
               fontWeight={600}
               bg={"pink.400"}
-              href={"#"}
+         marginLeft="35px"
               width={"200px"}
               backgroundColor={"rgb(225, 225,225)"}
               color={"rgb(216, 25, 194)"}
