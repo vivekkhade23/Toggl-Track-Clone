@@ -5,20 +5,20 @@ import { useNavigate } from "react-router-dom";
 import {Link} from "react-router-dom"
 
 const NavbarProduct = () => {
-    const navigate = useNavigate();
+//     const navigate = useNavigate();
 
-const handleKey=()=>{
-navigate("/key-featurekeys")
+// const handleKey=()=>{
+// navigate("/key-featurekeys")
 
-}
-const handleBill=()=>{
-    navigate("/billing-invoicing")
+// }
+// const handleBill=()=>{
+//     navigate("/billing-invoicing")
     
-    }
-    const handlePay=()=>{
-        navigate("/payroll")
+//     }
+//     const handlePay=()=>{
+//         navigate("/payroll")
         
-        }
+//         }
      
 
 
@@ -34,14 +34,14 @@ const handleBill=()=>{
                     </div>
                     <div className={styles.NavbarProduct_child_mainContainer_mydiv} >
                    
-                        <div onClick={()=>navigate('/key-fetures')}
+                         <div 
                          className={styles.NavbarProduct_child_child_mainContainer_mydiv}>
                             <div>
                                 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTUiIHZpZXdCb3g9IjAgMCA1MCA1NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjIyLjgzMDIiIGhlaWdodD0iMjIuODMwMiIgZmlsbD0iI0RENkZEMSIvPgo8cmVjdCB4PSIyNi45ODE0IiB5PSI1LjE4OTQ1IiB3aWR0aD0iMjIuODMwMiIgaGVpZ2h0PSIyMi44MzAyIiBmaWxsPSIjNDEyQTRDIi8+CjxyZWN0IHk9IjI2Ljk4MDUiIHdpZHRoPSIyMi44MzAyIiBoZWlnaHQ9IjIyLjgzMDIiIGZpbGw9IiM0MTJBNEMiLz4KPHJlY3QgeD0iMjYuOTgxNCIgeT0iMzIuMTY5OSIgd2lkdGg9IjIyLjgzMDIiIGhlaWdodD0iMjIuODMwMiIgZmlsbD0iI0RENkZEMSIvPgo8L3N2Zz4K" alt="" />
                             </div>
                             <div>
                                 <h5>
-                                    <Link to={"/key-fetures"}>Key features</Link>
+                                    <Link to="/key-fetures">Key features</Link>
                                     
                                 </h5>
                                 <p>
@@ -65,14 +65,14 @@ const handleBill=()=>{
                         </div>
                
                         <div 
-                         onClick={()=>navigate('/billing-invoicing')}
+                       
                             className={styles.NavbarProduct_child_child_mainContainer_mydiv}>
                             <div>
                                 <img src= "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTUiIGhlaWdodD0iNTUiIHZpZXdCb3g9IjAgMCA1NSA1NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjEuNzQ2NSIgY3k9IjIyLjc0NjUiIHI9IjIxLjc0NjUiIGZpbGw9IiNGMkJERUMiLz4KPGNpcmNsZSBjeD0iNDAuMzg2MyIgY3k9IjEyLjY1MDIiIHI9IjExLjI2MTYiIGZpbGw9IiNFNTdDRDgiLz4KPHBhdGggZD0iTTQwLjc2NTMgMTkuMTU0M0M0MC41NzAzIDE5LjE1NDMgNDAuNDEwNyAxOS4wODc4IDQwLjI4NjYgMTguOTU0OEM0MC4xNjI0IDE4LjgzMDcgNDAuMTAwNCAxOC42NzU1IDQwLjEwMDQgMTguNDg5NFYxNy41ODVDMzkuNTU5NiAxNy41NDk2IDM5LjA3NjQgMTcuNDY1NCAzOC42NTA4IDE3LjMzMjRDMzguMjM0MSAxNy4xOTA1IDM3Ljg3NTEgMTcuMDM1NCAzNy41NzM2IDE2Ljg2NjlDMzcuMzY5NyAxNi43NTE3IDM3LjI0MTEgMTYuNTk2NSAzNy4xODggMTYuNDAxNUMzNy4xNDM2IDE2LjIwNjQgMzcuMTU2OSAxNi4wMjAyIDM3LjIyNzggMTUuODQyOUMzNy4yOTg4IDE1LjY2NTYgMzcuNDE4NSAxNS41NDE1IDM3LjU4NjkgMTUuNDcwNkMzNy43NTU0IDE1LjM5OTYgMzcuOTU0OCAxNS40MzA3IDM4LjE4NTQgMTUuNTYzNkMzOC40MzM2IDE1LjcwNTUgMzguNzU3MiAxNS44NDI5IDM5LjE1NjIgMTUuOTc1OUMzOS41NjQgMTYuMSA0MC4wNTE2IDE2LjE2MjEgNDAuNjE5IDE2LjE2MjFDNDEuMjg0IDE2LjE2MjEgNDEuNzYyNyAxNi4wNDY4IDQyLjA1NTMgMTUuODE2M0M0Mi4zNDc5IDE1LjU3NjkgNDIuNDk0MSAxNS4yNzk5IDQyLjQ5NDEgMTQuOTI1M0M0Mi40OTQxIDE0LjYzMjcgNDIuMzkyMiAxNC4zOTM0IDQyLjE4ODMgMTQuMjA3MkM0MS45ODQ0IDE0LjAyMSA0MS42MjA5IDEzLjg3MDMgNDEuMDk3OCAxMy43NTVMMzkuNjg4MSAxMy40NDkxQzM4LjA4MzQgMTMuMTAzNCAzNy4yODEgMTIuMjYxMSAzNy4yODEgMTAuOTIyNEMzNy4yODEgMTAuMTc3NyAzNy41MzM3IDkuNTUyNjMgMzguMDM5MSA5LjA0NzI3QzM4LjU1MzMgOC41MzMwNiAzOS4yNDA0IDguMjIyNzUgNDAuMTAwNCA4LjExNjM3VjcuMTcyMTZDNDAuMTAwNCA2Ljk4NTk3IDQwLjE2MjQgNi44MzA4MiA0MC4yODY2IDYuNzA2N0M0MC40MTA3IDYuNTczNzEgNDAuNTcwMyA2LjUwNzIyIDQwLjc2NTMgNi41MDcyMkM0MC45NTE1IDYuNTA3MjIgNDEuMTA2NiA2LjU3MzcxIDQxLjIzMDggNi43MDY3QzQxLjM2MzcgNi44MzA4MiA0MS40MzAyIDYuOTg1OTcgNDEuNDMwMiA3LjE3MjE2VjguMTAzMDdDNDEuNzg0OSA4LjEzODUzIDQyLjE1NzIgOC4yMjI3NSA0Mi41NDczIDguMzU1NzRDNDIuOTQ2MyA4LjQ4ODczIDQzLjI5MjEgOC42NzA0OCA0My41ODQ2IDguOTAwOTlDNDMuNzUzMSA5LjAzMzk4IDQzLjg1MDYgOS4xODkxMyA0My44NzcyIDkuMzY2NDRDNDMuOTAzOCA5LjUzNDg5IDQzLjg3MjggOS42OTQ0OCA0My43ODQxIDkuODQ1MkM0My43MDQzIDkuOTg3MDUgNDMuNTc1OCAxMC4wODQ2IDQzLjM5ODUgMTAuMTM3OEM0My4yMyAxMC4xODIxIDQzLjAzMDUgMTAuMTM3OCA0Mi44IDEwLjAwNDhDNDIuNTQyOSA5Ljg1NDA2IDQyLjI1NDggOS43MzQzOCA0MS45MzU2IDkuNjQ1NzJDNDEuNjE2NCA5LjU0ODE5IDQxLjIzNTIgOS40OTk0MyA0MC43OTE5IDkuNDk5NDNDNDAuMjI0NSA5LjQ5OTQzIDM5Ljc3NjggOS42Mjc5OSAzOS40NDg3IDkuODg1MDlDMzkuMTI5NiAxMC4xMzMzIDM4Ljk3IDEwLjQ2MTQgMzguOTcgMTAuODY5MkMzOC45NyAxMS4xNzA2IDM5LjA2NzUgMTEuNDE0NCAzOS4yNjI2IDExLjYwMDZDMzkuNDU3NiAxMS43Nzc5IDM5Ljc5MDEgMTEuOTE5OCA0MC4yNiAxMi4wMjYyTDQxLjcwOTUgMTIuMzQ1NEM0Mi41NjA2IDEyLjUzMTUgNDMuMTg1NyAxMi44Mjg1IDQzLjU4NDYgMTMuMjM2NEM0My45ODM2IDEzLjYzNTMgNDQuMTgzMSAxNC4xNjI4IDQ0LjE4MzEgMTQuODE4OUM0NC4xODMxIDE1LjU2MzYgNDMuOTI2IDE2LjE3NTQgNDMuNDExOCAxNi42NTQxQzQyLjkwNjQgMTcuMTI0IDQyLjI0NTkgMTcuNDIxIDQxLjQzMDIgMTcuNTQ1MlYxOC40ODk0QzQxLjQzMDIgMTguNjc1NSA0MS4zNjgyIDE4LjgzMDcgNDEuMjQ0MSAxOC45NTQ4QzQxLjExOTkgMTkuMDg3OCA0MC45NjA0IDE5LjE1NDMgNDAuNzY1MyAxOS4xNTQzWiIgZmlsbD0iIzJDMTMzOCIvPgo8cGF0aCBkPSJNMjUuODgzMiAyNy4yODc2QzIwLjY0MDggMzAuOTc2NyAxNy41MzQxIDMwLjcxNzggMTUuMzk4MyAzMC41ODg0QzcuNTAyMjcgMzMuNTAwNiAtMy40NzQ1MSA0MS4zMDU2IDE1Ljc4NjYgNDkuMjI3NUMzOS44NjMxIDU5LjEyOTkgNDcuNjI1NyA0OC43NTM0IDQ5Ljk1OTYgNDYuNTA5MkM1NS4wMDc5IDQxLjY1NTEgNTQuNDI1NCAyNC43NjM0IDUzLjg0MjkgMjIuNjI3NkM1My4zNzY5IDIwLjkxOSA1MS40NDgyIDIwLjQ5MTggNTAuNTQyMSAyMC40OTE4QzQ3LjI0MTMgMTkuOTA4NiA0NS43NTI3IDIyLjgyMTggNDUuNjg4IDI0Ljc2MzRDNDUuNjg4IDI0Ljc2MzQgNDYuNDY0NyAzNC4yNzc1IDQ1LjY4OCAzNy4xOUM0NS4wNjY3IDM5LjUxOTkgNDIuNTgxNCA0MC40OTA4IDQxLjQxNjQgNDAuNjg0OUMzOS42Njg5IDQwLjk0MzggMzUuMzk3MyA0MC44MDE0IDMyLjI5MDYgMzguMTYwOEMyOS4xODQgMzUuNTIwMSAzMC42MDc5IDMzLjQzNjEgMzEuNzA4MSAzMi43MjQyTDM3LjcyNzMgMjguODQwOUMzOC41MDM5IDI3Ljk5OTUgMzkuNTkxMiAyNS44NTA4IDM3LjcyNzMgMjMuOTg2OEMzNS44NjMzIDIyLjEyMjggMzQuMTAyOCAyMi4zMDQgMzMuNDU1NiAyMi42Mjc2TDI1Ljg4MzIgMjcuMjg3NloiIGZpbGw9IiM0MTJBNEMiLz4KPHJlY3QgeD0iMS45NDE0MSIgeT0iMzAuMTI0IiB3aWR0aD0iMTAuNDg0OSIgaGVpZ2h0PSIxOS40MTY1IiByeD0iMS4wNTUwOCIgZmlsbD0iI0U1N0NEOCIvPgo8L3N2Zz4K" alt="" />
                             </div>
                             <div>
                                 <h5>
-                                <Link to={"/billing-invoicing"}>Billing and invoicing</Link>
+                                <Link to="/billing-invoicing">Billing and invoicing</Link>
                                     
                                 </h5>
                                 <p>
@@ -82,7 +82,7 @@ const handleBill=()=>{
                         </div>
                     
                         <div 
-                         onClick={()=>navigate('/payroll')}
+                        
 
                            className={styles.NavbarProduct_child_child_mainContainer_mydiv}>
                             <div >
@@ -116,7 +116,7 @@ const handleBill=()=>{
                             </div>
                         </div>
                         <div
-                           onClick={()=>navigate('/project-budget')}
+                          
                             className={styles.NavbarProduct_child_child_mainContainer_mydiv}>
                             <div>
                                 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTMiIGhlaWdodD0iNTMiIHZpZXdCb3g9IjAgMCA1MyA1MyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjYuNSIgY3k9IjI2LjUiIHI9IjI2LjUiIGZpbGw9IiM0MTJBNEMiLz4KPGNpcmNsZSBjeD0iMjYuNSIgY3k9IjI2LjUwMDIiIHI9IjE5LjcyMDkiIGZpbGw9IiNGNUNCRUYiLz4KPGNpcmNsZSBjeD0iMjYuNjM1NCIgY3k9IjI2LjYzNTIiIHI9IjE0LjMxIiBmaWxsPSIjRTU3Q0Q4Ii8+CjxjaXJjbGUgY3g9IjI2LjM1MjEiIGN5PSIyNi4zNTIxIiByPSI4LjQ4IiBmaWxsPSIjRkZERTkxIi8+CjxwYXRoIGQ9Ik0yMS44MjM1IDIyLjg2MzJMMjcuMDE5NiAyOC4wNTkzTDM4LjQ1MDkgMTYuNjI3OSIgc3Ryb2tlPSIjNDEyQTRDIiBzdHJva2Utd2lkdGg9IjIuNTk4MDQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="" />
