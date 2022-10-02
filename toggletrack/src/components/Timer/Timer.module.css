@@ -1,5 +1,6 @@
 .maintimer{
     margin-left: 100px;
+    color:  #2C1338;
     
        
     }
@@ -28,14 +29,18 @@
         margin-top: 20px;
         gap:40px;
         margin-left: 80px;
-    
+        color:  #2C1338;
+        font-weight: 400;
     
     }
     .timerh1{
         margin-top: 20px;
+        color:  #2C1338;
+        font-weight: 400;
+        
     }
     .textundertimer{
-        color: #FCE5D8;
+        color:  #2C1338;
         font-family: 'GT Haptik Medium',sans-serif;
         font-weight: 400;
         font-size: clamp(1.5rem * 0.8, 2vw, 1.5rem);

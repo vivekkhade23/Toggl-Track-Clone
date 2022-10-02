@@ -5,6 +5,7 @@ import Keyfeatures from '../components/Keyfeatures/Keyfeatures'
 import Login from '../components/LoginSignup/Login'
 import Signup from '../components/LoginSignup/Signup'
 import { Payroll } from '../components/Payroll/Payroll'
+import Projects from '../components/productPages/Projects'
 import { ProjectBudgeting } from '../components/project_budgeting/ProjectBudgeting'
 import Home from '../LandingPage/Home'
 import Price from '../PricingComp/Price'
@@ -22,6 +23,8 @@ const AllRoutes = () => {
   <Route path="/billing-invoicing" element={<Billing/>}/>
   <Route path="/payroll" element={<Payroll/>}/>
   <Route path="/project-budgeting" element={<ProjectBudgeting/>}/>
+  <Route path="/projects" element={<Projects/>}/>
+
   {/* <Route path="/payroll" element={<Payroll/>}/> */}
 
 </Routes>

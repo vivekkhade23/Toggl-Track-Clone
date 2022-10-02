@@ -184,6 +184,7 @@ const DesktopNav = () => {
               Log In
             </Text>
             </Link>
+            <Link to="/projects">
             <Button
               display={{ base: "none", md: "inline-flex" }}
               fontSize={"sm"}
@@ -200,8 +201,9 @@ const DesktopNav = () => {
               }}
               as={"a"}
             >
-              Go to timer
+             Our Projects
             </Button>
+            </Link>
 </Stack>
   </div>
 

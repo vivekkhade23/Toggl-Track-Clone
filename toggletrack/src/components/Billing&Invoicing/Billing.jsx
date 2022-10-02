@@ -1,4 +1,5 @@
 import React from 'react'
+import LargeWithLogoCentered from '../footer/footer'
 import styles from "./Billing.module.css"
 
 const Billing = () => {
@@ -195,6 +196,7 @@ const Billing = () => {
                          {/*Footer */}
                     </div>
                </div>
+               <LargeWithLogoCentered/>
 
           </>
      )

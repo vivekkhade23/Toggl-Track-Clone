@@ -5,6 +5,7 @@ import team from "./cs-team-sweatandco.jpg"
 import news from  "./cs-newlogic.jpg"
 import teamss from "./case-study-perception-engineering.jpg"
 import down from "./download.jpg"
+import LargeWithLogoCentered from '../components/footer/footer';
 
 const HomeTwo = () => {
   return (
@@ -149,6 +150,7 @@ const HomeTwo = () => {
 
     </Box>
 
+    <LargeWithLogoCentered/>
 
 </Box>
   )
