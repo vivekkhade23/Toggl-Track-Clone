@@ -2,9 +2,12 @@ import {
   Link,
   useDisclosure,
   useColorModeValue,
+  Flex,
+  useMediaQuery,
 
 } from "@chakra-ui/react";
-import "./Navtop.css";
+import styles from "./Navtop.module.css";
+
 
 const Links = ["Dashboard", "Projects", "Team"];
 
@@ -26,13 +29,19 @@ const NavLink = ({ children }) => (
 );
 
 export default function WithAction() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const [Display] = useMediaQuery('(min-width: 800px)')
 
   return (
-    <>
-      <div className="topnavbar">
-        {/* <div></div> */}
-        <div className="topnavbar-second">
+   <Flex>
+   {Display?<FullScreen/>:<HalfScreen/>}
+    </Flex>
+  );
+}
+const FullScreen=()=>{
+  return (  
+      <div className={styles.topnavbar}>
+        <div className={styles.topnavbarsecond}>
         <div><NavLink>Back to Toggl Global</NavLink></div>
         <div><NavLink>Products</NavLink></div>
         <div> <NavLink>Blog</NavLink></div>
@@ -40,6 +49,18 @@ export default function WithAction() {
         <div> <NavLink>Working at Toggl!</NavLink></div>
         </div>
       </div>
-    </>
-  );
+    
+  )
+  
+}
+const HalfScreen=()=>{
+  return (
+  <div className={styles.topnavbar}>
+  <div  className={styles.topnavbarsecond}>
+  <div><NavLink>Back to Toggl Global</NavLink></div>
+  <div><NavLink>Products</NavLink></div>
+  <div> <NavLink>Blog</NavLink></div>
+  </div>
+  </div>
+  )
 }

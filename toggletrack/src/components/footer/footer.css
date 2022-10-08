@@ -22,6 +22,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     color: aliceblue;
+    /* background-color: aliceblue; */
   }
   .Iconssocial > div {
     width: 50%;

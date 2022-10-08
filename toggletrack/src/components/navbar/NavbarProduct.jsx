@@ -7,10 +7,10 @@ import { Link } from "react-router-dom"
 const NavbarProduct = () => {
 
     return (
-        <>
+        <div >
 
             <div className={styles.NavbarProduct_nain_mainContainer_mydiv}>
-                <div>
+                <div className={styles.main}>
                     <div className={styles.NavbarProduct_child_P_child_mainContainer_mydiv}>
                         <p >
                             FOR EVERY NEED
@@ -76,9 +76,7 @@ const NavbarProduct = () => {
                                 </div>
                                 <div>
 
-                                    <Link to="/payroll">
-                                        <h5>   Payroll</h5>
-                                    </Link>
+                                    <Link to="/payroll"> <h5>   Payroll</h5></Link>
 
 
                                     <p>
@@ -108,11 +106,7 @@ const NavbarProduct = () => {
                                     <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTMiIGhlaWdodD0iNTMiIHZpZXdCb3g9IjAgMCA1MyA1MyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjYuNSIgY3k9IjI2LjUiIHI9IjI2LjUiIGZpbGw9IiM0MTJBNEMiLz4KPGNpcmNsZSBjeD0iMjYuNSIgY3k9IjI2LjUwMDIiIHI9IjE5LjcyMDkiIGZpbGw9IiNGNUNCRUYiLz4KPGNpcmNsZSBjeD0iMjYuNjM1NCIgY3k9IjI2LjYzNTIiIHI9IjE0LjMxIiBmaWxsPSIjRTU3Q0Q4Ii8+CjxjaXJjbGUgY3g9IjI2LjM1MjEiIGN5PSIyNi4zNTIxIiByPSI4LjQ4IiBmaWxsPSIjRkZERTkxIi8+CjxwYXRoIGQ9Ik0yMS44MjM1IDIyLjg2MzJMMjcuMDE5NiAyOC4wNTkzTDM4LjQ1MDkgMTYuNjI3OSIgc3Ryb2tlPSIjNDEyQTRDIiBzdHJva2Utd2lkdGg9IjIuNTk4MDQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="" />
                                 </div>
                                 <div>
-                                    <Link to="/project-budgeting">
-                                        <h5>
-                                            Project budgeting
-                                        </h5>
-                                    </Link>
+                                    <Link to="/project-budgeting">  <h5>      Project budgeting     </h5>         </Link>
                                     <p>
                                         Stay on track with budgets and deadlines. Eliminate scope creep and overwork
                                     </p>
@@ -190,7 +184,7 @@ const NavbarProduct = () => {
                     </div>
                 </div>
                 </div>
-            </>
+            </div>
             )
 }
 

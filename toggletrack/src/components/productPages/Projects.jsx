@@ -35,6 +35,7 @@ import {
   ModalCloseButton,RadioGroup
 } from "@chakra-ui/react";
 import Timer from "../Timer/Timer";
+import SideBar from "../Sidebar/SideBar";
 
 
 const Projects = () => {
@@ -58,11 +59,7 @@ const Projects = () => {
       });
     
   }, [user1]);
-  //  console.log(user)
-  //  const handleDelete= async id => {
-  //  await axios.delete(`https://damp-oasis-99716.herokuapp.com/project/${id}`);
-    
-  //   };
+ 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -70,14 +67,13 @@ const Projects = () => {
    
   };
 
-  // const { name, client } = user1;
-  // const onInputChange = (e) => {
-  //   setUser1({ ...user1, [e.target.name]: e.target.value });
-  // };
+ 
   console.log(user1);
 
   return (
-    <>
+    <div className={style.box}>
+    <SideBar/>
+    <div className={style.display}>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent w={"50%"}>
@@ -256,7 +252,8 @@ const Projects = () => {
           </Table>
         </TableContainer>
       </Box>
-    </>
+      </div>
+    </div>
   );
 };
 

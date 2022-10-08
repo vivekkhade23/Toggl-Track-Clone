@@ -66,7 +66,6 @@ export default function WithSubnavigation() {
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
             <Text
-              // textAlign={useBreakpointValue({ base: "center", md: "left" })}
               fontFamily={"heading"}
               color={useColorModeValue("red.800", "white")}
               className={styles.logo1}
@@ -93,16 +92,6 @@ const DesktopNav = () => {
   const { getDisclosureProps, getButtonProps } = useDisclosure()
   const buttonProps = getButtonProps()
   const disclosureProps = getDisclosureProps()
-
-
-
-// const handleLog=()=>{
-//   navigate("/login")
-// }
-
-// const handlePrice=()=>{
-//   navigate("/pricing")
-// }
 
   return ( 
   <div className={styles.desktopdisplay}>
@@ -214,8 +203,7 @@ const DesktopNav = () => {
 
 const MobileNav = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
-
+ const navigate=useNavigate()
   return (
   
   <Stack>
@@ -224,11 +212,22 @@ const MobileNav = () => {
     <Drawer placement='left' className={styles.drawer} onClose={onClose} isOpen={isOpen}>
       <DrawerOverlay />
       <DrawerContent className={styles.drawercontent}>
-        <DrawerHeader borderBottomWidth='1px'>Basic Drawer</DrawerHeader>
-        <DrawerBody>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
+        <DrawerHeader borderBottomWidth='1px'>
+        <Text
+              fontFamily={"heading"}
+              color={useColorModeValue("red.800", "white")}
+              className={styles.logo1}
+              onClick={()=>navigate("/")}
+            >
+              <img src={logo1} />
+            </Text>
+
+        </DrawerHeader>
+        <DrawerBody className={styles.drawerbody}>
+          <Link ><p>Product</p></Link>
+        <Link to="/pricing">  <p>Pricing</p></Link>
+          <p>Why track?</p>
+          <p>Careers</p>
         </DrawerBody>
         <Button className={styles.cancelbutton} variant='ghost' mr={3} onClick={onClose}>
             Cancel
