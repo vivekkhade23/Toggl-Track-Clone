@@ -10,6 +10,7 @@ import { RiGroupFill } from 'react-icons/ri';
 import { IoMdHelpCircle } from 'react-icons/io';
 import { AiTwotoneSetting} from 'react-icons/ai';
 import { CgOrganisation } from 'react-icons/cg';
+import { Link } from 'react-router-dom';
 
 
 const SideBar = () => {
@@ -19,15 +20,15 @@ const SideBar = () => {
 <VStack className={styles.vstack}>
     <HStack>
         <img src={logo} className={styles.img} alt="toogle"/>
-        <BsBell className={styles.icons}/>
+        <BsBell style={{backgroundColor:"white",color:"white"}} />
     </HStack>
     <br />
     <Text   className={styles.Text}>TRACK</Text>
  
-    <HStack className={styles.hStack}>
+    <Link to="/timer">  <HStack className={styles.hStack}>
         <HiClock/>
-        <Text>Timer</Text>
-    </HStack>
+       <Text>Timer</Text>
+    </HStack></Link> 
     <br />
     <Text className={styles.Text}>ANALYZE</Text>
     {/* <br /> */}
@@ -42,22 +43,22 @@ const SideBar = () => {
     <br />
     <Text  className={styles.Text}>MANAGE</Text>
     {/* <br /> */}
-    <HStack className={styles.hStack}>
+    <Link to="/projects">  <HStack className={styles.hStack}>
         <BsFillCreditCardFill/>
-        <Text>Projects</Text>
-    </HStack>
-    <HStack className={styles.hStack}>
+         <Text>Projects</Text> 
+    </HStack></Link>
+    <Link to="/client">  <HStack className={styles.hStack}>
         <FaAddressBook/>
         <Text>Clients</Text>
-    </HStack>
+    </HStack></Link>
     <HStack className={styles.hStack}>
         <RiGroupFill/>
         <Text>Team</Text>
     </HStack>
-    <HStack className={styles.hStack}>
+    <Link to="/tags">  <HStack className={styles.hStack}>
         <BsTagsFill/>
-        <Text>Tags</Text>
-    </HStack>
+         <Text>Tags</Text>
+    </HStack></Link>
     <HStack className={styles.hStack}>
         <IoMdHelpCircle/>
         <Text>Help</Text>

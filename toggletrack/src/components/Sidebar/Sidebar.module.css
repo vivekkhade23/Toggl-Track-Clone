@@ -31,14 +31,12 @@
     text-align: left;
    
 }
-.hStack{
-   
+.hStack{ 
     margin-top: 20px;
     margin-bottom: 20px;
     width: 120px;
     justify-content: space-between;
     margin: auto;
-    margin-top: 25px;
 }
 .hStack:hover{
     background-color: #864da0;

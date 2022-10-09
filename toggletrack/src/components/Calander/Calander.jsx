@@ -1,3 +1,4 @@
+import { Button, Input } from "@chakra-ui/react";
 import format from "date-fns/format";
 import getDay from "date-fns/getDay";
 import parse from "date-fns/parse";
@@ -7,7 +8,7 @@ import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
+import styles from "./calender.module.css"
 
 const locales = {
     "en-US": require("date-fns/locale/en-US"),
@@ -48,17 +49,16 @@ function Calander() {
     }
 
     return (
-        <div className="App">
-            <h1>Calendar</h1>
-            <h2>Add New Event</h2>
-            <div style={{}}>
-                <input type="text" placeholder="Add Title" style={{ width: "200px", margin: "10px 30px" ,border :"1px solid black"}} value={newEvent.title} onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })} />
-                <DatePicker placeholderText="Start Date" style={{margin:"10px 30px" }} selected={newEvent.start} onChange={(start) => setNewEvent({ ...newEvent, start })} />
-                <DatePicker style={{margin:"10px 30px" }} placeholderText="End Date" selected={newEvent.end} onChange={(end) => setNewEvent({ ...newEvent, end })} />
+        <div className={styles.App}>
+            <h2 className={styles.text}>Add New Event</h2>
+            <div className={styles.Display}>
+                <Input type="text" placeholder="Add Title" className={styles.input} value={newEvent.title} onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })} />
+               <DatePicker placeholderText="Start Date" className={styles.calendar}  selected={newEvent.start} onChange={(start) => setNewEvent({ ...newEvent, start })} />
+                <DatePicker  placeholderText="End Date" className={styles.calendar} backgroundColor="#2c1338" selected={newEvent.end} onChange={(end) => setNewEvent({ ...newEvent, end })} />
                
-                <button stlye={{ marginTop: "20px", border:"1px solid red", height:"20px",width:"50px" }} onClick={handleAddEvent}>
+                <Button  className={styles.button} backgroundColor="#e57cd8"  onClick={handleAddEvent}>
                     Add Event
-                </button>
+                </Button>
             </div>
             <Calendar  localizer={localizer} events={allEvents} startAccessor="start" endAccessor="end" style={{ height:500, margin: "40px"}} />
         </div>
