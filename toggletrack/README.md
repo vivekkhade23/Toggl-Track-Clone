@@ -38,13 +38,18 @@
 ## Some Chanllenges We Faced :
 
 -We have faced few challenges while working on project , sometimes it take lot of time to finish the tasks , but on the other hand we learned many things from that. some of the challenges are-
+
 -As this is the first time we are working by creating branches from Github main , we have to handle the data carefully.
+
 -Sometimes due to the some network issue there was a lack of communication between members but we able to sort out the issue and we finished our work within the given time.
 
 ## Conclusion & Experience :
 -This is the project where we learnt about teamwork, we learned from other teammates and most impoertantly he value of taking timely decisions.
+
 -We are very thankful to our Team lead,Teammates and instructor for helping us to finish the project within due date. We are looking forward to add some features and functionalities which we left in this project for future expansion.
+
 -The entire journey of working with this project was great. We have learned lots of things by applying the ideas and concepts to the real website and we have got a lot of confidence.
+
 -This project is the result of Hardwork and Dedication by the Team Members.
 
 ## Team Members and Contributors :
