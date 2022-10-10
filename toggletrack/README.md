@@ -9,9 +9,7 @@
 ### 4]Sirtaj Khan
 ### 5]Vivek Khade (Team Lead)
 
-##  **FRONTEND LIBRARIES**
-
-<br />
+## **FRONTEND LIBRARIES**
 <p align="center">
     <img src="https://img.shields.io/badge/React_(18.2.0)-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="reactjs" />
     <img src="https://img.shields.io/badge/Redux_(4.2.0)-593D88?style=for-the-badge&logo=redux&logoColor=white" alt="redux" />
