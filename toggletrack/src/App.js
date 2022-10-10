@@ -9,8 +9,6 @@ function App() {
     <div className="App">
       <WithSubnavigation />
       <AllRoutes />
-      <LargeWithLogoCentered/>
-  
     </div>
   );
 }

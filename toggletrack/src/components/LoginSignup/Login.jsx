@@ -107,7 +107,7 @@ const Login = () => {
                     <Link to="/signup">
                         <button className={styles.signupfreebtn}>Signup for free</button></Link>
                 </Box>
-            </Box>
+            </Box>z
         </Box>
     );
 };

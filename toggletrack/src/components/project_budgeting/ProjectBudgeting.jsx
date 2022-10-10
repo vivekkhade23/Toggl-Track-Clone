@@ -1,6 +1,7 @@
 import style from "./projectbudgeting.module.css";
 import { BiCaretRight } from "react-icons/bi";
 import { Faq } from "./Faq";
+import LargeWithLogoCentered from "../footer/footer";
 
 export const ProjectBudgeting = () => {
   const designCards = [
@@ -131,6 +132,7 @@ export const ProjectBudgeting = () => {
         
       </div>
       <Faq />
+      <LargeWithLogoCentered/>
     </div>
   );
 };
