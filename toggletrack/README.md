@@ -32,7 +32,8 @@
 ## 🚀 Features
 - Responsive Navbar
 - Homepage
-- Login/Signup User Account
+- Responsive & Authenticated Login page
+- Responsive & Authenticated Signup User Account page
 - Billing and Invoicing
 - Payroll
 - Pricing
@@ -40,6 +41,7 @@
 - Private Routes
 - Timer page
 - project page
+- Responsive Footer
 - All  page are working
 
 ## Some Chanllenges We Faced :
