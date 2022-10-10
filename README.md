@@ -33,7 +33,7 @@
 - Responsive Navbar
 - Homepage
 - Responsive & Authenticated Login page
-- Responsive & Authenticate Signup User Account page
+- Responsive & Authenticated Signup User Account page
 - Billing and Invoicing
 - Payroll
 - Pricing
