@@ -29,6 +29,11 @@ const Signup = () => {
                 alert("Signup Succesfull")
                 navigate("/login")
             })
+            .catch((err)=>{
+                console.log(err)
+                alert("User Already Exist!")
+            })
+
     }
 
     function handleData(e) {

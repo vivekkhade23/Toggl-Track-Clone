@@ -27,6 +27,11 @@ const Login = () => {
                 alert("Login Succesfull")
                 navigate("/")
             })
+            .catch((err)=>{
+                console.log(err)
+                alert("Invalid Credential!")
+            })
+
     }
 
     function handleData(e) {
