@@ -5,6 +5,7 @@ import { ViewIcon, LockIcon } from '@chakra-ui/icons'
 import Axios from "axios"
 import { Link, useNavigate } from "react-router-dom"
 import styles from "./login.module.css"
+import LargeWithLogoCentered from "../footer/footer";
 
 
 const Login = () => {
@@ -107,7 +108,7 @@ const Login = () => {
                     <Link to="/signup">
                         <button className={styles.signupfreebtn}>Signup for free</button></Link>
                 </Box>
-            </Box>z
+            </Box>
         </Box>
     );
 };

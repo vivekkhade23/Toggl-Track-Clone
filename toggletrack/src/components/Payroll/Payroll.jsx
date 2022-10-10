@@ -1,6 +1,7 @@
 import style from "./Payroll.module.css";
 import { BiCaretRight } from "react-icons/bi";
 import { Faq } from "../project_budgeting/Faq";
+import LargeWithLogoCentered from "../footer/footer";
 
 export const Payroll = () => {
   const designCards = [
@@ -144,6 +145,8 @@ export const Payroll = () => {
         
       </div>
       <Faq />
+      <LargeWithLogoCentered/>
+
     </div>
   );
 };

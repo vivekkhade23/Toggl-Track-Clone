@@ -1,0 +1,19 @@
+.Display{
+    display: flex;
+
+}
+.text{
+    color:#2c1338;
+    font-weight: 900;
+    font-size: xx-large;
+}
+.input{
+    width: 200px; 
+    padding: 25px;
+}
+
+.button{
+    color: white;
+    border: 1px solid;
+    width: 200px;
+}

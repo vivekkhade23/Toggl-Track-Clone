@@ -1,3 +1,4 @@
+import LargeWithLogoCentered from '../footer/footer'
 import styles from './Keyfeatures.module.css'
 
 const Keyfeatures=()=>{
@@ -178,6 +179,7 @@ const Keyfeatures=()=>{
 
 </div>
 
+<LargeWithLogoCentered/>
 
 </div>
     )

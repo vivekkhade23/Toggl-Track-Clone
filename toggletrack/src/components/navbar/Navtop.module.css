@@ -2,6 +2,7 @@
     display: flex;
     background-color: #e57cd8;
     max-height: 40px;
+    width: 100%;
   }
   .topnavbar > div:nth-child(1) {
     flex-grow: 4;
@@ -17,13 +18,13 @@
   NavLink:hover {
     border-bottom: 2px solid grey;
   }
-  .topnavbar-second{
+  .topnavbarsecond{
     gap: 20px;
     justify-content: flex-end;
     margin-right: 10px;
 display: flex;
   }
-  .topnavbar-second >div{
+  .topnavbarsecond >div{
     margin-left: 20px;
     text-decoration: none;
   }

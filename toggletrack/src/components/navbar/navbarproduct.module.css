@@ -1,3 +1,6 @@
+.main{
+    display:flex
+}
 .NavbarProduct_nain_mainContainer_mydiv{
     display:flex;
     background-color: rgb(252, 229, 216);
