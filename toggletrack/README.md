@@ -62,6 +62,6 @@
 -This project is the result of Hardwork and Dedication by the Team Members.
 
 ## Links :
-# <h3>Deployment Link   : https://toggltrack.vercel.app/ </h3>
+# <h3>Deployment Link   : https://toggletrack-beta.vercel.app/ </h3>
 # <h3>Github Link       : https://github.com/vivekkhade23/striped-substance-4459/tree/main/toggletrack </h3>
 <hr/>
