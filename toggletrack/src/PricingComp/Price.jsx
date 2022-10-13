@@ -21,6 +21,7 @@ import {
 import image from "./cs-team-sweatandco.jpg"
 import Toggle from './Toggle/Toggle'
 import EmployeeFAQ from './Employee_FAQ/EmployeeFAQ'
+import LargeWithLogoCentered from '../components/footer/footer'
 
 const Price = () => {
   return (
@@ -707,7 +708,7 @@ We <em style={{color:"#e57cd8"}}>have an app</em> for that!</Heading>
     </Box>
 
 
-    
+    <LargeWithLogoCentered/>
     </Box>
   )
 }

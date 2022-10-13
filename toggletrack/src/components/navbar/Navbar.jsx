@@ -161,8 +161,6 @@ const DesktopNav = () => {
               as={"a"}
               fontSize={"1rem"}
               fontWeight={400}
-          
-              
               font={"16px"}
               color={" rgb(255, 243, 237)"}
               fontStyle={"GT Haptik Medium',sans-serif"}
@@ -170,7 +168,7 @@ const DesktopNav = () => {
                 bg: "black.300",
               }}
             >
-              Log In
+              LogIn
             </Text>
             </Link>
             <Link to="/projects">

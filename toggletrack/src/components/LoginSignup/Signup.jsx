@@ -8,9 +8,18 @@ import { useState } from "react";
 import Axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./signup.module.css"
+import {
+    Alert,
+    AlertIcon,
+    AlertTitle,
+    AlertDescription,
+} from '@chakra-ui/react'
 
 
 const Signup = () => {
+    const [show, setshow] = useState(false);
+    const [signup, setSignup] = useState(false);
+
     const navigate = useNavigate();
     const url = "https://desolate-coast-33231.herokuapp.com/users/signup";
     const [data, setData] = useState({
@@ -26,12 +35,18 @@ const Signup = () => {
         })
             .then(res => {
                 console.log(res.data);
-                alert("Signup Succesfull")
-                navigate("/login")
+                setSignup(true)
+                setTimeout(() => {
+                    setSignup(false)
+                    navigate('/login')
+                }, 3000)
             })
-            .catch((err)=>{
+            .catch((err) => {
                 console.log(err)
-                alert("User Already Exist!")
+                setshow(true)
+                setTimeout(() => {
+                    setshow(false)
+                }, 3000)
             })
 
     }
@@ -61,7 +76,7 @@ const Signup = () => {
                 </Text>
                 <Text fontSize="22px">
                     Already have an account?{"  "}
-                   <Link to="/login"><span style={{ color: "#e57cd8", textDecoration: "underline" }}>Log in Here.</span></Link>
+                    <Link to="/login"><span style={{ color: "#e57cd8", textDecoration: "underline" }}>Log in Here.</span></Link>
                 </Text>
 
             </Stack>
@@ -131,6 +146,18 @@ const Signup = () => {
                                 <Link></Link><button className={styles.submit} type="submit">Sign up via email</button>
                                 <br />
                                 <br />
+                                <Box>
+                                    {show && <Alert status='error' borderRadius="35px">
+                                        <AlertIcon />
+                                        <AlertTitle>User Already Exist!</AlertTitle>
+                                        <AlertDescription>please signup via new user.</AlertDescription>
+                                    </Alert>}
+                                    {signup && <Alert status='success' borderRadius="35px">
+                                        <AlertIcon />
+                                        <AlertTitle>Signup Successful</AlertTitle>
+                                        <AlertDescription>Please Wait... we are redirecting.</AlertDescription>
+                                    </Alert>}
+                                </Box>
                                 <p className={styles.label2}>
                                     By signing up, you agree to our <span style={{ textDecoration: "underline", color: "#e57cd8" }}>terms of service, privacy
                                         policy</span>  and to receiving marketing communication from Toggl
@@ -140,8 +167,8 @@ const Signup = () => {
                             <br />
                         </Box>
                     </Box>
-                    <Box mt={"45px"} >
-                        <VStack align='left' display={["none","block"]}>
+                    <Box mt={"45px"} color="white">
+                        <VStack align='left' display={["none", "block"]}>
                             <Box fontSize={"80px"} align='left'>
                                 <img src={png} />
                             </Box>
@@ -162,7 +189,7 @@ const Signup = () => {
                             <br />
 
                         </VStack>
-                        <Box display={["none","block"]} mt={"40px"} >
+                        <Box display={["none", "block"]} mt={"40px"} >
                             <img src="https://public-assets.toggl.com/b/static/6b5c09dd5baafcca069103cd517b38c9/67548/review-badges.avif" alt="capterra" />
                         </Box>
                     </Box>

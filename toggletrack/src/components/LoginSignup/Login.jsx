@@ -6,9 +6,18 @@ import Axios from "axios"
 import { Link, useNavigate } from "react-router-dom"
 import styles from "./login.module.css"
 import LargeWithLogoCentered from "../footer/footer";
+import {
+    Alert,
+    AlertIcon,
+    AlertTitle,
+    AlertDescription,
+} from '@chakra-ui/react'
 
 
 const Login = () => {
+    const [show, setshow] = useState(false);
+    const [login, setLogin] = useState(false);
+
     const navigate = useNavigate();
     const url = "https://desolate-coast-33231.herokuapp.com/users/login"
     const [data, setData] = useState({
@@ -24,12 +33,18 @@ const Login = () => {
         })
             .then(res => {
                 console.log(res.data);
-                alert("Login Succesfull")
-                navigate("/")
+                setLogin(true)
+                setTimeout(() => {
+                    setLogin(false)
+                    navigate('/timer')
+                }, 3000)
             })
-            .catch((err)=>{
+            .catch((err) => {
                 console.log(err)
-                alert("Invalid Credential!")
+                setshow(true)
+                setTimeout(() => {
+                    setshow(false)
+                }, 3000)
             })
 
     }
@@ -99,10 +114,24 @@ const Login = () => {
                             <br />
                             <button className={styles.login} type="submit">Log in</button>
                         </form>
+                        <Box mt={"25px"}>
+                            {show && <Alert status='error' borderRadius="35px">
+                                <AlertIcon />
+                                <AlertTitle>Wrong Credentials!</AlertTitle>
+                                <AlertDescription>please fill correct details.</AlertDescription>
+                            </Alert>}
+                            {login && <Alert status='success' borderRadius="35px">
+                                <AlertIcon />
+                                <AlertTitle>Login Successful</AlertTitle>
+                                <AlertDescription>Enjoy our website.</AlertDescription>
+                            </Alert>}
+                        </Box>
                         <Box className={styles.clogin} mt={"35px"}>
                             <LockIcon className={styles.lockicon} w={5} h={5} />
                             <Text>Company login (SSO)</Text>
                         </Box>
+
+
                     </Box>
                 </Box>
                 <br />
