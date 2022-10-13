@@ -41,7 +41,7 @@ import SideBar from "../Sidebar/SideBar";
 const Projects = () => {
   const [user, setUser] = useState([]);
   const { isOpen, onOpen, onClose } = useDisclosure();
-  // const {id}=useParams()
+
   
   const [user1, setUser1] = useState({
     name: "",
@@ -58,13 +58,13 @@ const Projects = () => {
         console.log(err);
       });
     
-  }, [user1]);
+  }, [user]);
  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     await axios.post("https://damp-oasis-99716.herokuapp.com/project", user1);
-   
+
   };
 
  
