@@ -12,6 +12,16 @@ clientRouter.get("/",async(req,res)=>{
     }
 })
 
+clientRouter.get("/:client",async(req,res)=>{
+    try {
+        const {client}=req.params;
+        let cli=await clientModel.find({client:client})
+        return res.send(cli)
+    } catch (error) {
+        return res.send(error)
+    }
+})
+
 
 clientRouter.post("/",async(req,res)=>{
     try {

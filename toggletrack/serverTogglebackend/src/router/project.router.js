@@ -59,9 +59,9 @@ projectRouter.put("/update/:id",(req,res)=>{
     }
 })
 
-projectRouter.get("/client",async(req,res)=>{
+projectRouter.get("/client/:client",async(req,res)=>{
     try {
-        const {client}=req.body;
+        const {client}=req.params;
      let projs=await projectModel.find({client:client});
      return res.send(projs)
      
@@ -70,9 +70,9 @@ projectRouter.get("/client",async(req,res)=>{
     }
  })
 
- projectRouter.get("/team",async(req,res)=>{
+ projectRouter.get("/team/:team",async(req,res)=>{
     try {
-        const {team}=req.body;
+        const {team}=req.params;
      let projs=await projectModel.find({team:team});
      return res.send(projs)
      
@@ -82,9 +82,9 @@ projectRouter.get("/client",async(req,res)=>{
  })
 
 
- projectRouter.get("/name",async(req,res)=>{
+ projectRouter.get("/name/:name",async(req,res)=>{
     try {
-        const {name}=req.body;
+        const {name}=req.params;
      let projs=await projectModel.find({name:name});
      return res.send(projs)
      
@@ -93,10 +93,20 @@ projectRouter.get("/client",async(req,res)=>{
     }
  })
 
- projectRouter.get("/archived",async(req,res)=>{
+ projectRouter.get("/archieved",async(req,res)=>{
     try {
-        const {isArchieved}=req.body;
-     let projs=await projectModel.find({isArchieved:isArchieved});
+        
+     let projs=await projectModel.find({isArchieved:true});
+     return res.send(projs)
+     
+    } catch (error) {
+     return res.send("failed")
+    }
+ })
+ projectRouter.get("/unarchieved/",async(req,res)=>{
+    try {
+       
+     let projs=await projectModel.find({isArchieved:false});
      return res.send(projs)
      
     } catch (error) {
