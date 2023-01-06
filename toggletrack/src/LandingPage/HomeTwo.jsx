@@ -109,7 +109,7 @@ const HomeTwo = () => {
    
     </Box>
 
-    <Box sx={{background:"#412A4C",height:"auto",padding:"4rem 2rem",width:"100%"}}>
+    <Box sx={{background:"#412A4C",height:"auto",padding:"4rem 2rem",width:"100vw"}}>
         <Heading class="swit">Switch to the time tracking tool 70,000+ teams across the world swear by</Heading>
         
         
@@ -144,7 +144,7 @@ const HomeTwo = () => {
         <Heading className='prefer'>Prefer a product demo instead?</Heading>
         <br/>
         <p class="teamss">Teams of 10+ are eligible for a personalized demo to see how Toggl Track can meet your time tracking goals</p>
-    <br/>
+       <br/>
         <a class="demo" href="/track/demo-request/">Book a demo</a>
        </Box>
 

@@ -1,239 +1,184 @@
 import {
-  Flex,
-  Text,
-  IconButton,
-  Button,
-  Stack,
-  Collapse,
-  useColorModeValue,
+
   useDisclosure,
-  DrawerBody,
 } from "@chakra-ui/react";
+
+import { Box, Button, HStack, Image, Text, VStack } from '@chakra-ui/react'
+import React, { useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
+import style from "./style.module.css"
+import { GiHamburgerMenu } from "react-icons/gi";
+import { BiChevronDown } from "react-icons/bi";
+import Toggle from "../../Assets/Images-navbar/togglt-Logo.jpg"
 import {
-  HamburgerIcon,
-  CloseIcon,
-} from "@chakra-ui/icons";
-import logo1 from "../../Assets/Images-navbar/togglt-Logo.jpg";
-import styles from "./Nav.module.css";
-import WithAction from "./Navbartop";
-import React, { useState } from "react";
-import NavbarProduct from "./NavbarProduct";
-import {
-  Drawer,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
+  Menu,
+  MenuButton,
+  MenuList,
 } from '@chakra-ui/react'
-import { useMediaQuery } from "@chakra-ui/react";
-import { AiOutlineBars } from "react-icons/ai"; 
-import WhyTracking from "./Whytracking";
+import { useState } from 'react';
+import NavbarProduct from './NavbarProduct';
+import WhyTracking from './Whytracking';
 import { Link, useNavigate } from "react-router-dom";
-
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+} from '@chakra-ui/react'
+import { declareAuth, declareLogout, declareToken } from "../../Redux/action";
 export default function WithSubnavigation() {
-  const navigate=useNavigate()
-  const { isOpen, onToggle } = useDisclosure();
-  const [Display] = useMediaQuery('(min-width: 1000px)')
+  const { isOpen, onOpen, onClose } = useDisclosure()
+
+  const [check, setCheck] = useState(false)
+  const isAuth = useSelector((store) => store.isAuth);
+  const token = useSelector((store) => store.token);
+  const dispatch = useDispatch()
+
+  const [user, setUser] = useState([])
+  useEffect(() => {
+    let a = token.split(":");
+    let id = a[0];
+    fetch(`https://toggleapi.onrender.com/users/${id}`).then(res => res.json()).then(res => setUser(res.user)).catch(err => console.log(err))
+  }, [isAuth])
+
+  const handleLogout = () => {
+    dispatch(declareLogout());
+    dispatch(declareAuth(false));
+    dispatch(declareToken(""))
+  }
+
+
+
+
+
   return (
-    <div className="toggle_navbar">
-      <div>
-        <WithAction />
-        <Flex
-        className={styles.maincontainer}
-          bg={useColorModeValue("#2c1338")}
-          color={useColorModeValue("gray.600", "white")}
-          py={{ base: 2 }}
-          px={{ base: 4 }}
-          borderColor={useColorModeValue("gray.200", "gray.900")}
-          align={"auto"}
-        >
-          <Flex
-            flex={{ base: 1, md: "auto" }}
-            ml={{ base: -2 }}
-            display={{ base: "flex", md: "none" }}
-          >
-            <IconButton
-              onClick={onToggle}
-              icon={
-                isOpen ? (
-                  <CloseIcon w={3} h={3} />
-                ) : (
-                  <HamburgerIcon w={5} h={5} />
-                )
-              }
-              variant={"ghost"}
-              aria-label={"Toggle Navigation"}
-            />
-          </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-            <Text
-              fontFamily={"heading"}
-              color={useColorModeValue("red.800", "white")}
-              className={styles.logo1}
-              onClick={()=>navigate("/")}
-            >
-              <img src={logo1} />
-            </Text>
+    <VStack w={"100vw"} >
+      <HStack className={style.navbartop}>
+        <NavLink>Back to Toggl Global</NavLink>
+        <NavLink>Products</NavLink>
+        <NavLink>Blog</NavLink>
+        <NavLink>Our mission</NavLink>
+        <NavLink>Working at Toggl!</NavLink>
 
-            <Flex display={{ base: "none", md: "flex" }} ml={10}>
-            {Display?<DesktopNav />:<MobileNav/>}  
-            </Flex>
-          </Flex>
-        </Flex>
-        <Collapse in={isOpen} animateOpacity>
-          <MobileNav />
-        </Collapse>
-      </div>
-    </div>
-  );
-}
+      </HStack>
+      <HStack className={style.navbar}>
+        <Box className={style.box1}>
+      <Link to="/">
+          <Image className={style.logo} src={Toggle} alt="Logo" />
+      
+      </Link>
+          <Box className={style.boxsub}>
 
-const DesktopNav = () => {
-  const navigate=useNavigate()
-  const { getDisclosureProps, getButtonProps } = useDisclosure()
-  const buttonProps = getButtonProps()
-  const disclosureProps = getDisclosureProps()
+            <Menu>
+              <MenuButton color={"white"} rightIcon={<BiChevronDown />}>
+                Product
+              </MenuButton>
+              <MenuList width={"100vw"} backgroundColor="#fce5d8" height="100vh">
+                <NavbarProduct width="100vw" height="100vh" />
+              </MenuList>
+            </Menu>
 
-  return ( 
-  <div className={styles.desktopdisplay}>
-  <>
-    <Text {...buttonProps} className={styles.button} >product</Text>
-    <Text {...disclosureProps} mt={4}>
-     {<NavbarProduct/>}
-    </Text>
-  </>
-  <>
-   <Link to="/pricing"> <Text {...buttonProps} className={styles.button} >pricing</Text></Link>
-    <Text {...disclosureProps} mt={4}>
-     {}
-    </Text>
-  </>
-  <>
-    <Text {...buttonProps}className={styles.button}>Why Track ?</Text>
-    <Text {...disclosureProps} mt={4}>
-     {/* {<WhyTracking/>} */}
-    </Text>
-  </>
-  <>
-    <Text {...buttonProps}className={styles.button}>careers</Text>
-    <Text {...disclosureProps} mt={4}>
-     {/* {<NavbarProduct/>} */}
-    </Text>
-  </>
+           <Link to="/pricing">
+           
+           <Text color={"white"} marginTop="19px" >Pricing</Text>
+           </Link> 
+            <Menu>
+              <MenuButton color={"white"} rightIcon={<BiChevronDown />}>
+                Why Track?
+              </MenuButton>
+              <MenuList width={"100vw"} backgroundColor="#fce5d8" height="100vh">
+                <WhyTracking width="100vw" height="100vh" />
+              </MenuList>
+            </Menu>
 
-  <Stack
-  className={styles.alignment}
-            flex={{ base: 1, md: 0 }}
-            justify={"flex-end"}
-            direction={"row"}
-            alignItems={"center"}
-            spacing={6}
-          >
-            <Text
-              as={"a"}
-              fontSize={"1rem"}
-              fontWeight={400}
-            width="125px"
-             
-              font={"16px"}
-              color={" rgb(255, 243, 237)"}
-              fontStyle={"GT Haptik Medium',sans-serif"}
-              cursor={"pointer"}
-              _hover={{
-                color: "pink",
-              }}
-            >
-              Book a demo
-            </Text>
-            <Text
-              as={"a"}
-              fontSize={"1rem"}
-              fontWeight={400}
-            
+            <Menu>
+              <MenuButton color={"white"} rightIcon={<BiChevronDown />}>
+                Career
+              </MenuButton>
+              <MenuList width={"100vw"} backgroundColor="#fce5d8" height="100vh">
+                <NavbarProduct width="100%" height="100%" />
+              </MenuList>
+            </Menu>
 
-              font={"16px"}
-              color={" rgb(255, 243, 237)"}
-            >
-              |
-            </Text>
-            <Link to="/login">
-            <Text
-          width="125px"
-              as={"a"}
-              fontSize={"1rem"}
-              fontWeight={400}
-              font={"16px"}
-              color={" rgb(255, 243, 237)"}
-              fontStyle={"GT Haptik Medium',sans-serif"}
-              _hover={{
-                bg: "black.300",
-              }}
-            >
-              LogIn
-            </Text>
-            </Link>
-            <Link to="/projects">
-            <Button
-              display={{ base: "none", md: "inline-flex" }}
-              fontSize={"sm"}
-              fontWeight={600}
-              bg={"pink.400"}
-         marginLeft="35px"
-              width={"200px"}
-              backgroundColor={"rgb(225, 225,225)"}
-              color={"rgb(216, 25, 194)"}
-              borderRadius={"26px"}
-              _hover={{
-                backgroundColor: "#2c1102",
-                color: "rgb(216, 25, 194)",
-              }}
-              as={"a"}
-            >
-             Our Projects
-            </Button>
-            </Link>
-</Stack>
-  </div>
+          </Box>
 
+        </Box>
+        <Box className={style.box2}>
+          <Text color={"white"} marginTop="-1px" >Book a Demo</Text>
+          <Text color={"white"} marginTop="-1px" >|</Text>
+          {
+
+            isAuth ?
+              <>
+                {/* <Text  color={"white"} marginTop="19px"></Text> */}
+                <Button backgroundColor={"#2c1338"} color="white" onClick={onOpen}>{user?.name}</Button>
+
+                <Modal isOpen={isOpen} onClose={onClose}>
+                  <ModalOverlay />
+                  <ModalContent backgroundColor={"#2c1338"} color="white">
+                    <ModalHeader>{user?.name}</ModalHeader>
+                    <ModalCloseButton />
+                    <ModalBody onClick={onClose}>
+                      <Button backgroundColor={"#e57cd8"} onClick={handleLogout}>Logout</Button>
+                    </ModalBody>
+
+                    {/* <ModalFooter>
+      <Button colorScheme='blue' mr={3}>
+        Close
+      </Button>
+
+    </ModalFooter> */}
+                  </ModalContent>
+                </Modal>
+              </>
+
+
+              :
+              <Link to="/login">
+                <Text color={"white"} marginTop="-1px" >Log In</Text>
+
+              </Link>
+          }
+
+
+          {
+            isAuth ?
+              <Link to="/projects">
+
+                <Button className={style.try}>
+                  Projects
+                </Button>
+              </Link> :
+              <Link to="/login">
+
+                <Button className={style.try}>
+                  Projects
+                </Button>
+              </Link>
+          }
+
+        </Box>
+        <input type="checkbox" style={{ display: "none" }} checked={check} />
+        <GiHamburgerMenu onClick={() => setCheck(!check)} className={style.GiHamburgerMenu} />
+
+
+
+      </HStack>
+      <ul className={check ? style.checked : style.unchecked}>
+
+        <li> <Text color={"black"} marginTop="19px" >Product</Text></li>
+        <li>  <Text color={"black"} marginTop="19px" >Pricing</Text></li>
+        <li> <Text color={"black"} marginTop="19px" >Why Track?</Text></li>
+        <li> <Text color={"black"} marginTop="19px" >Career</Text></li>
+        <li><Text color={"black"} marginTop="19px" >Book a Demo</Text></li>
+        <li><Button className={style.try}> Try for free</Button></li>
+        <li> <Text alignSelf={"center"} fontWeight="600" color={"black"} marginTop="19px" >Log In</Text></li>
+      </ul>
+    </VStack>
   )
-};
-
-
-
-const MobileNav = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
- const navigate=useNavigate()
-  return (
-  
-  <Stack>
-<>
-<Button className={styles.iconsbutton}  align="right" onClick={onOpen}><AiOutlineBars className={styles.icons}/></Button>
-    <Drawer placement='left' className={styles.drawer} onClose={onClose} isOpen={isOpen}>
-      <DrawerOverlay />
-      <DrawerContent className={styles.drawercontent}>
-        <DrawerHeader borderBottomWidth='1px'>
-        <Text
-              fontFamily={"heading"}
-              color={useColorModeValue("red.800", "white")}
-              className={styles.logo1}
-              onClick={()=>navigate("/")}
-            >
-              <img src={logo1} />
-            </Text>
-
-        </DrawerHeader>
-        <DrawerBody className={styles.drawerbody}>
-          <Link ><p>Product</p></Link>
-        <Link to="/pricing">  <p>Pricing</p></Link>
-          <p>Why track?</p>
-          <p>Careers</p>
-        </DrawerBody>
-        <Button className={styles.cancelbutton} variant='ghost' mr={3} onClick={onClose}>
-            Cancel
-          </Button>
-      </DrawerContent>
-    </Drawer>
-  </>
-  </Stack>
-  );
-};
+}
 

@@ -1,0 +1,122 @@
+
+.navbartop{
+    background-color: #e57cd8 ;
+    width: 100%;
+    display: flex;
+   font-size: 12px;
+   font-family: sans-serif;
+   font-weight: 400;
+  gap: 35px;
+  padding:5px 5px 0px 5px;
+  padding-right: 20px;
+  margin-bottom: -8px;
+    justify-content: flex-end;
+}
+
+@media (max-width:900px){
+   .navbartop{
+  height: 0px;
+  display: none;
+  visibility: hidden;
+  
+   }
+    }
+.GiHamburgerMenu{
+    display: none;
+}
+@media (max-width:900px){
+    .GiHamburgerMenu{
+        display: flex;
+        color: #e57cd8;
+        width: 35px;
+        height: 25px;
+    }
+    
+}
+
+.navbar{
+    background-color: #2c1338;
+  font-family: sans-serif;
+  font-weight: 400;
+  padding: 5px;
+  font-size: 15px; 
+  line-height: 23px;
+    width: 100vw;
+    margin-bottom: -125px;
+    justify-content: space-between;
+    display: flex;
+}
+.box1{
+    display: flex;
+    gap: 35px;
+}
+.boxsub{
+    display: flex;
+    gap: 35px;
+}
+
+.box2{
+    gap: 35px;
+    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.try{
+    background-color: #fce5d8;
+    color: #e57cd8;
+
+    border-radius: 20px;
+}
+
+@media (max-width:900px){
+.boxsub{
+    display: none;
+}
+.box2{
+    display: none;
+}
+.navbar{
+    background-color: #fce5d8;
+    position: fixed;
+}
+.logo{
+    background-color: #fce5d8;
+}
+}
+
+
+
+
+.checked{
+    display: flex;
+    flex-direction: column;
+    top: 85px;
+    transition: 0.5s;
+    gap: 15px;
+    background-color: #fce5d8;
+    width: 100vw;
+    padding: 35px;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 23px;
+    height: 100vh;
+}
+.checked li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.checked li button{
+  width: 150px;
+  background-color: #e57cd8;
+  color: white;
+  border-radius: 20px;
+  align-self: center;
+}
+.unchecked{
+    display: none;
+}

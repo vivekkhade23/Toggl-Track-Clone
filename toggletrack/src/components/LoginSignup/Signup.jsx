@@ -14,6 +14,7 @@ import {
     AlertTitle,
     AlertDescription,
 } from '@chakra-ui/react'
+import { setAuth, setToken } from "../../Redux/action";
 
 
 const Signup = () => {
@@ -21,8 +22,9 @@ const Signup = () => {
     const [signup, setSignup] = useState(false);
 
     const navigate = useNavigate();
-    const url = "https://desolate-coast-33231.herokuapp.com/users/signup";
+    const url = "https://toggleapi.onrender.com/users/signup";
     const [data, setData] = useState({
+        name:"",
         email: "",
         password: "",
     });
@@ -30,6 +32,7 @@ const Signup = () => {
     async function submit(e) {
         e.preventDefault();
         await Axios.post(url, {
+            name:data.name,
             email: data.email,
             password: data.password,
         })
@@ -115,6 +118,18 @@ const Signup = () => {
                         <br />
                         <Box className={styles.formbox}>
                             <form onSubmit={(e) => submit(e)}>
+                            <p className={styles.label}>Name</p>
+                                <br />
+                                <input
+                                    type="text"
+                                    id="name"
+                                    value={data.name}
+                                    onChange={(e) => handleData(e)}
+                                    className={styles.inputbox}
+                                    placeholder="Name"
+                                />
+                                <br />
+                                <br />
                                 <p className={styles.label}>Email</p>
                                 <br />
                                 <input

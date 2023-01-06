@@ -12,14 +12,16 @@ import {
     AlertTitle,
     AlertDescription,
 } from '@chakra-ui/react'
+import { declareAuth, declareToken} from "../../Redux/action";
+import { useDispatch } from "react-redux";
 
 
 const Login = () => {
     const [show, setshow] = useState(false);
     const [login, setLogin] = useState(false);
-
+const dispatch=useDispatch()
     const navigate = useNavigate();
-    const url = "https://desolate-coast-33231.herokuapp.com/users/login"
+    const url = "https://toggleapi.onrender.com/users/login"
     const [data, setData] = useState({
         email: "",
         password: "",
@@ -32,7 +34,8 @@ const Login = () => {
             password: data.password,
         })
             .then(res => {
-                console.log(res.data);
+               dispatch(declareAuth(true))
+             dispatch(declareToken(res.data.token))
                 setLogin(true)
                 setTimeout(() => {
                     setLogin(false)

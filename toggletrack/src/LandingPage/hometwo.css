@@ -126,6 +126,7 @@ p, h1, h2, h3, h4, h5 {
     column-gap: 12px;
     width: calc(100% + 30px);
     padding: 0 30px 5px 0;
+    margin-left: -25px;
 }
 .css-9pbf95-Tab{
     display: inline-block;
@@ -139,7 +140,7 @@ p, h1, h2, h3, h4, h5 {
     font-family: 'GT Haptik Medium Rotalic',sans-serif;
     padding: 13px 20px;
     margin: 5px 0;
-   
+  
     cursor: pointer;
     min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
@@ -148,6 +149,11 @@ p, h1, h2, h3, h4, h5 {
 .css-9pbf95-Tab:hover{
     color:  #FFDE91;
     background: #412A4C;
+}
+@media(max-width:600){
+    .css-19nzmxl-Tabs{
+        margin-left: -200px;
+    }
 }
 #need1{
     padding-right: 40px;
@@ -327,12 +333,14 @@ margin:auto;
     #rajawat{
         background:  #fce5d8 ;
         height: auto;
-        width:45%;
+        width:45vw;
         text-align: center;
         border-radius: 12px;
         padding: 4rem 2rem 4rem 5rem;
-       margin-left: 600px;
+       margin-left: -600px;
+     
     }
+  
     .demo{
         font-family: 'GT Haptik Medium',sans-serif;
         width:43%;
